@@ -14,13 +14,30 @@
  * along with genixl.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+#define _GNU_SOURCE
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <locale.h>
+#include <iconv.h>
 #include <mxml.h>
+
+/*this file is a temporal file, until i finish the "lib"
+ * i will test, and scrape it constantly*/
 
 int main(int argc, char *argv[])
 {
+	char *CurLocale=NULL; /*var to hold the current locale*/
+
+	CurLocale = setlocale(LC_ALL, "");/* set the user's env locale*/
+	if ( CurLocale == NULL )
+	{
+		/*not critical, but lets just warn the user*/
+		perror("Warning: Cant set locale, check your env\n")
+	}
+
+
 
 	return EXIT_SUCCESS;
 }
