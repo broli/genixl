@@ -36,7 +36,10 @@ int main(int argc, char *argv[])
 		/*not critical, but lets just warn the user*/
 		perror("Warning: Cant set locale, check your env\n")
 	}
-
+	if ( argc > 1 )
+	{
+		/*the app was run with parameters*/
+	}
 
 
 	return EXIT_SUCCESS;
