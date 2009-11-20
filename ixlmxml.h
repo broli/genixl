@@ -14,14 +14,9 @@
  * along with genixl.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef GENIXLLIB_H_INCLUDED
-#define GENIXLLIB_H_INCLUDED
+#ifndef IXLMXML_H_INCLUDED
+#define IXLMXML_H_INCLUDED
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <locale.h>
-#include <iconv.h>
 #include <mxml.h>
 
 /*This function will recieve an empty tree, and will
@@ -30,10 +25,11 @@
 int initialize(mxml_node_t *tree);
 
 /*This function is the write call back
- * it will make the xml ""pretty""*/
+ * it will make the xml ""pretty""
 const char *whitespace_cb(mxml_node_t *node, int where);
+this dosnt need to be public*/
 
 
 
-#endif /*GENIXLLIB_H_INCLUDED*/
+#endif /*IXLMXML_H_INCLUDED*/
 
