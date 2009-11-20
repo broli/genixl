@@ -1,14 +1,14 @@
-An aplication to easily create ixl files to feed into iSiloX
+An application to easily create ixl files to feed into iSiloX
 
 http://www.isilox.com/ iSiloX is the desktop application that converts 
 content to the iSilo™ 3.x/4.x document format.
-Unfortunately, the Linux verision of iSiloX only works by creating
+Unfortunately, the Linux version of iSiloX only works by creating
 the ixl file by hand (aka text editor
 This app will make it easy and interactive
 
 If you want to read more about the ixl format, head to this site
 http://www.isilox.com/support/manual/ixl/ixl.htm
 
-this is my first semi-serius proyect. 
-Im open to ANY suggestions, corrections and help in general, as long as you keep it civilized.
+this is my first semi-serious project. 
+I'm open to ANY suggestions, corrections and help in general, as long as you keep it civilized.
 carlos.ferrabone {at) gmail [dot} com
