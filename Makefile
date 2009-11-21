@@ -5,19 +5,22 @@ CFLAGS=$(pkg-config --cflags mxml) -ggdb3 -Wall -Wextra -pedantic -ansi -Wmissin
 
 LIBS=$(pkg-config --libs mxml)
 
-objects = 
+objects = obj/genixl-cli.o
 
 all : $(objects)
 	touch obj/touched
 	touch bin/touched
 	gcc  $(CFLAGS) $(LIBS) $(objects) -o bin/genixl-cli
 
-
+obj/genixl-cli.o : genixllib.h ixlmxml.h genixl-cli.c
+	gcc -c $(CFLAGS) genixl-cli.c -o obj/genixl-cli.o
 
 clean :
 	rm obj/* 
 	rm bin/*
 
+ctags:
+	ctags -R --c-kinds=dfglmstv .
 tags :
 	ctags -R --c-kinds=dfglmstv .
 

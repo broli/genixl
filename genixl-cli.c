@@ -23,6 +23,9 @@
 #include <iconv.h>
 #include <mxml.h>
 
+#include "ixlmxml.h"
+#include "genixllib.h"
+
 /*this file is a temporal file, until i finish the "lib"
  * i will test, and scrape it constantly*/
 
