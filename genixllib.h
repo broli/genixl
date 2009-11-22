@@ -40,7 +40,7 @@ typedef enum menu_items_e
 } menu_items_t;
 
 /*Prints the corresponding menu*/
-void printmenu(menu_items_t menu);
+menu_items_t printmenu(menu_items_t menu);
 
 menu_items_t getuserchoice(menu_items_t location);
 

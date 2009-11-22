@@ -17,3 +17,7 @@
 #include "../genixllib.h"
 
 /*implementation of functions goes here*/
+menu_items_t printmenu(menu_items_t menu)
+{
+	
+}
