@@ -15,7 +15,7 @@ all : $(objects)
 obj/genixl-cli.o : genixllib.h ixlmxml.h genixl-cli.c
 	gcc -c $(CFLAGS) genixl-cli.c -o obj/genixl-cli.o
 
-obj/genixllib.o: genixllib.h modules/genixllib.c
+obj/genixllib.o : genixllib.h modules/genixllib.c
 	gcc -c $(CFLAGS) modules/genixllib.c -o obj/genixllib.o
 
 obj/ixlmxml.o : ixlmxml.h modules/ixlmxml.c
@@ -25,7 +25,7 @@ clean :
 	rm obj/* 
 	rm bin/*
 
-ctags:
+ctags :
 	ctags -R --c-kinds=dfglmstv .
 tags :
 	ctags -R --c-kinds=dfglmstv .

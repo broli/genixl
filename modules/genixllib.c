@@ -19,5 +19,44 @@
 /*implementation of functions goes here*/
 menu_items_t printmenu(menu_items_t menu)
 {
-	
-}
+	if ( menu == MENU_MAIN )
+	{
+		/*TODO make main menu*/
+	}
+	else if ( menu == MENU_SOURCE )
+	{
+		/*TODO make source menu*/
+	}
+	else if ( menu == MENU_DESTINATION )
+	{
+		/*TODO make destination menu*/
+	}
+	else if ( menu == MENU_LINK )
+	{
+		/*TODO make link menu */
+	}
+	else if ( menu == MENU_IMAGE )
+	{
+		/*TODO make image menu*/
+	}
+	else if ( menu == MENU_COLOR )
+	{
+		/*TODO make color menu*/
+	}
+	else if ( menu == MENU_MARGIN )
+	{
+		/*TODO make margin menu*/
+	}
+	else if ( menu == MENU_SECURITY )
+	{
+		/*TODO make security menu*/
+	{
+	else if ( menu == MENU_TEXT )
+	{
+		/*TODO make text menu*/
+	}
+	else if ( menu = MENU_DOCUMENT )
+	{
+		/*TODO make document menu */
+	}
+} /* menu_items_t printmenu(menu_items_t menu) */

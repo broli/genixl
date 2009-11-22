@@ -21,7 +21,7 @@
 typedef enum menu_items_e
 {
 	MENU_MAIN,
-	MENU_SOURCE.
+	MENU_SOURCE,
 	MENU_DESTINATION,
 	MENU_LINK,
 	MENU_IMAGE,
