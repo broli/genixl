@@ -59,4 +59,34 @@ menu_items_t printmenu(menu_items_t menu)
 	{
 		/*TODO make document menu */
 	}
+	else if ( menu == MENU_BOOKMARKS )
+	{
+		/*TODO Make bookmarks menu*/
+	}
+	else if ( menu == MENU_LASTCONVERSION )
+	{
+		/*TODO read the ixl docs and find out if 
+		 * this can/should be modified by other
+		 * programs (other than iSilox that is*/
+	}
+	else if ( menu == MENU_MESSAGES )
+	{
+		/*TODO make a messages menu*/
+	}
+	else if ( menu == MENU_COOKIES )
+	{
+		/*TODO make a cookies menu
+		 * (not all options) */
+	}
+	else if ( menu == MENU_SCHEDULING )
+	{
+		/* I have no idea what this does
+		 * and no intention of suporting it for now*/
+	}
+	else if ( menu == MENU_TARGETS )
+	{
+		/* I have no idea what this does
+		 * and no intention of suporting it for now*/
+
+	}
 } /* menu_items_t printmenu(menu_items_t menu) */
