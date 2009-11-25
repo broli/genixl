@@ -28,9 +28,6 @@ clean :
 ctags :
 	ctags -R --c-kinds=dfglmstv .
 
-tags :
-	ctags -R --c-kinds=dfglmstv .
-
 #if anyone knows a better way, to add logic to the makefile so if this dirs dont exits, it creates, pls tell me how
 mkdir :
 	mkdir obj/
