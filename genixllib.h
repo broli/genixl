@@ -39,11 +39,13 @@ typedef enum menu_items_e
 	MENU_COOKIES,
 	MENU_SCHEDULING,
 	MENU_TARGETS,
+	MENU_EXIT,
 	MENU_ERROR
 } menu_items_t;
 
 /*Prints the corresponding menu
- * it returns the menu that was just printed*/
+ * it returns the menu that was just printed, or MENU_ERROR in 
+ * case it fails (probably mxml related)*/
 menu_items_t printmenu(menu_items_t menu,mxml_node_t *tree);
 
 /*This function reads the user input,and does one of two things

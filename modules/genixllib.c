@@ -16,31 +16,40 @@
 
 #include "../genixllib.h"
 #include <mxml.h>
+#include <stdlib.h>
 
-menu_items_t printmenuSource(menu_items_t menu,mxml_node_t *tree);
-menu_items_t printmenuDestination(menu_items_t menu,mxml_node_t *tree);
-menu_items_t printmenuLinkOptions(menu_items_t menu,mxml_node_t *tree);
-menu_items_t printmenuImageOptions(menu_items_t menu,mxml_node_t *tree);
-menu_items_t printmenuTableOptions(menu_items_t menu,mxml_node_t *tree);
-menu_items_t printmenuColorOptions(menu_items_t menu,mxml_node_t *tree);
-menu_items_t printmenuMarginOptions(menu_items_t menu,mxml_node_t *tree);
-menu_items_t printmenuSecurityOptions(menu_items_t menu,mxml_node_t *tree);
-menu_items_t printmenuTextOptions(menu_items_t menu,mxml_node_t *tree);
-menu_items_t printmenuDocumentOptions(menu_items_t menu,mxml_node_t *tree);
-menu_items_t printmenuBookmarks(menu_items_t menu,mxml_node_t *tree);
-menu_items_t printmenuLastConversion(menu_items_t menu,mxml_node_t *tree);
-menu_items_t printmenuMessages(menu_items_t menu,mxml_node_t *tree);
-menu_items_t printmenuCookieOptions(menu_items_t menu,mxml_node_t *tree);
-menu_items_t printmenuScheduling(menu_items_t menu,mxml_node_t *tree);
-menu_items_t printmenuTargets(menu_items_t menu,mxml_node_t *tree);
+/*Main menu, no error cheking and no parameters, just print the main menu*/
+void printmenuMain(void);
+/*these do have return code, because the mxml can fail
+ * the only parameter needed is the tree,
+ * so it can show the current setting*/
+menu_items_t printmenuSource(mxml_node_t *tree);
+menu_items_t printmenuDestination(mxml_node_t *tree);
+menu_items_t printmenuLinkOptions(mxml_node_t *tree);
+menu_items_t printmenuImageOptions(mxml_node_t *tree);
+menu_items_t printmenuTableOptions(mxml_node_t *tree);
+menu_items_t printmenuColorOptions(mxml_node_t *tree);
+menu_items_t printmenuMarginOptions(mxml_node_t *tree);
+menu_items_t printmenuSecurityOptions(mxml_node_t *tree);
+menu_items_t printmenuTextOptions(mxml_node_t *tree);
+menu_items_t printmenuDocumentOptions(mxml_node_t *tree);
+menu_items_t printmenuBookmarks(mxml_node_t *tree);
+menu_items_t printmenuLastConversion(mxml_node_t *tree);
+menu_items_t printmenuMessages(mxml_node_t *tree);
+menu_items_t printmenuCookieOptions(mxml_node_t *tree);
+menu_items_t printmenuScheduling(mxml_node_t *tree);
+menu_items_t printmenuTargets(mxml_node_t *tree);
 
 
 /*implementation of functions goes here*/
 menu_items_t printmenu(menu_items_t menu,mxml_node_t *tree)
 {
+	menu_items_t rtrnMenu=MENU_ERROR;
+
 	if ( menu == MENU_MAIN )
 	{
 		/*TODO make main menu*/
+		printmenuMain();
 		return MENU_MAIN;
 	}
 	else if ( menu == MENU_SOURCE )
@@ -125,12 +134,34 @@ menu_items_t printmenu(menu_items_t menu,mxml_node_t *tree)
 		return MENU_ERROR;
 
 	}
-
+	/*this never should be executed*/
 	return MENU_ERROR;
 } /* menu_items_t printmenu(menu_items_t menu) */
 
-
-menu_items_t printmenuSource(menu_items_t menu,mxml_node_t *tree)
+void printmenuMain(void)
 {
-	
+	system("clear");
+	printf("Main\n----\n");
+	printf( "1)   Source\n"
+		"2)   Destination\n"
+		"3)   LinkOptions\n"
+		"4)   ImageOptions\n"
+		"5)   TableOptions\n"
+		"6)   ColorOptions\n"
+		"7)   MarginOptions\n"
+		"8)   SecurityOptions\n"
+		"9)   TextOptions\n"
+		"10)  DocumentOptions\n"
+		"11)  Bookmarks\n"
+		"12)  LastConversion\n"
+		"13)  Messages\n"
+		"14)  CookieOptions\n"
+		"15)  Scheduling\n"
+		"16)  Targets\n"
+		"17)  Exit\n\n");
+}
+
+menu_items_t printmenuSource(mxml_node_t *tree)
+{
+	/*print some fancy menu*/
 }

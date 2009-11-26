@@ -44,6 +44,8 @@ int main(int argc, char *argv[])
 		/*the app was run with parameters*/
 	}
 
+	printmenu(MENU_MAIN,NULL);
+
 
 	return EXIT_SUCCESS;
 }
