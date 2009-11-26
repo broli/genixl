@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 	if ( CurLocale == NULL )
 	{
 		/*not critical, but lets just warn the user*/
-		perror("Warning: Cant set locale, check your env\n")
+		perror("Warning: Cant set locale, check your env\n");
 	}
 	if ( argc > 1 )
 	{

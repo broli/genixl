@@ -14,6 +14,6 @@
  * along with genixl.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#incliude "../ixlmxml.h"
+#include "../ixlmxml.h"
 
 /*Implementation of the functions goes here*/

@@ -17,8 +17,10 @@
 #ifndef GENIXLLIB_H_INCLUDED
 #define GENIXLLIB_H_INCLUDED
 
+#include <mxml.h>
+
 /*Menu items enum*/
-typedef enum menu_items_e
+typedef enum menu_items_e 
 {
 	MENU_MAIN,
 	MENU_SOURCE,
@@ -36,7 +38,8 @@ typedef enum menu_items_e
 	MENU_MESSAGES,
 	MENU_COOKIES,
 	MENU_SCHEDULING,
-	MENU_TARGETS
+	MENU_TARGETS,
+	MENU_ERROR
 } menu_items_t;
 
 /*Prints the corresponding menu*/

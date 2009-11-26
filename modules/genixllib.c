@@ -17,22 +17,22 @@
 #include "../genixllib.h"
 #include <mxml.h>
 
-printmenuSource(menu_items_t menu,mxml_node_t *tree);
-printmenuDestination(menu_items_t menu,mxml_node_t *tree);
-printmenuLinkOptions(menu_items_t menu,mxml_node_t *tree);
-printmenuImageOptions(menu_items_t menu,mxml_node_t *tree);
-printmenuTableOptions(menu_items_t menu,mxml_node_t *tree);
-printmenuColorOptions(menu_items_t menu,mxml_node_t *tree);
-printmenuMarginOptions(menu_items_t menu,mxml_node_t *tree);
-printmenuSecurityOptions(menu_items_t menu,mxml_node_t *tree);
-printmenuTextOptions(menu_items_t menu,mxml_node_t *tree);
-printmenuDocumentOptions(menu_items_t menu,mxml_node_t *tree);
-printmenuBookmarks(menu_items_t menu,mxml_node_t *tree);
-printmenuLastConversion(menu_items_t menu,mxml_node_t *tree);
-printmenuMessages(menu_items_t menu,mxml_node_t *tree);
-printmenuCookieOptions(menu_items_t menu,mxml_node_t *tree);
-printmenuScheduling(menu_items_t menu,mxml_node_t *tree);
-printmenuTargets(menu_items_t menu,mxml_node_t *tree);
+menu_items_t printmenuSource(menu_items_t menu,mxml_node_t *tree);
+menu_items_t printmenuDestination(menu_items_t menu,mxml_node_t *tree);
+menu_items_t printmenuLinkOptions(menu_items_t menu,mxml_node_t *tree);
+menu_items_t printmenuImageOptions(menu_items_t menu,mxml_node_t *tree);
+menu_items_t printmenuTableOptions(menu_items_t menu,mxml_node_t *tree);
+menu_items_t printmenuColorOptions(menu_items_t menu,mxml_node_t *tree);
+menu_items_t printmenuMarginOptions(menu_items_t menu,mxml_node_t *tree);
+menu_items_t printmenuSecurityOptions(menu_items_t menu,mxml_node_t *tree);
+menu_items_t printmenuTextOptions(menu_items_t menu,mxml_node_t *tree);
+menu_items_t printmenuDocumentOptions(menu_items_t menu,mxml_node_t *tree);
+menu_items_t printmenuBookmarks(menu_items_t menu,mxml_node_t *tree);
+menu_items_t printmenuLastConversion(menu_items_t menu,mxml_node_t *tree);
+menu_items_t printmenuMessages(menu_items_t menu,mxml_node_t *tree);
+menu_items_t printmenuCookieOptions(menu_items_t menu,mxml_node_t *tree);
+menu_items_t printmenuScheduling(menu_items_t menu,mxml_node_t *tree);
+menu_items_t printmenuTargets(menu_items_t menu,mxml_node_t *tree);
 
 
 /*implementation of functions goes here*/
@@ -69,7 +69,7 @@ menu_items_t printmenu(menu_items_t menu,mxml_node_t *tree)
 	else if ( menu == MENU_SECURITY )
 	{
 		/*TODO make security menu*/
-	{
+	}
 	else if ( menu == MENU_TEXT )
 	{
 		/*TODO make text menu*/
@@ -109,3 +109,9 @@ menu_items_t printmenu(menu_items_t menu,mxml_node_t *tree)
 
 	}
 } /* menu_items_t printmenu(menu_items_t menu) */
+
+
+menu_items_t printmenuSource(menu_items_t menu,mxml_node_t *tree)
+{
+	
+}
