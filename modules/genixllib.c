@@ -163,5 +163,8 @@ void printmenuMain(void)
 
 menu_items_t printmenuSource(mxml_node_t *tree)
 {
-	/*print some fancy menu*/
+	
+	system("clear");
+	printf("Source\n------\n");
+	printf("menu here\n");
 }
