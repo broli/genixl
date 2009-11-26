@@ -74,7 +74,7 @@ menu_items_t printmenu(menu_items_t menu,mxml_node_t *tree)
 	{
 		/*TODO make text menu*/
 	}
-	else if ( menu = MENU_DOCUMENT )
+	else if ( menu == MENU_DOCUMENT )
 	{
 		/*TODO make document menu */
 	}

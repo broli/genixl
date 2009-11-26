@@ -42,10 +42,17 @@ typedef enum menu_items_e
 	MENU_ERROR
 } menu_items_t;
 
-/*Prints the corresponding menu*/
+/*Prints the corresponding menu
+ * it returns the menu that was just printed*/
 menu_items_t printmenu(menu_items_t menu,mxml_node_t *tree);
 
-menu_items_t getuserchoice(menu_items_t location,mxml_node_t *tree);
+/*This function reads the user input,and does one of two things
+ * while in the main Menu, it returns the sub menu choosed (tree can be null)
+ * while in a submenu, it reads the new value into the tree (tree required) 
+ * This Function returns 2 things
+ * while in the main menu, the submenu choosed
+ * while in the submenu,MENU_ERROR if it cant allocate or modify the tree, the submenu otherwise*/
+menu_items_t processUserinput(menu_items_t location,mxml_node_t *tree);
 
 
 #endif /*GENIXLLIB_H_INCLUDED*/
