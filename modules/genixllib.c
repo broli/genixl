@@ -163,8 +163,21 @@ void printmenuMain(void)
 
 menu_items_t printmenuSource(mxml_node_t *tree)
 {
+	mxml_node_t *node=NULL;
 	
 	system("clear");
 	printf("Source\n------\n");
-	printf("menu here\n");
+
+	node = mxmlFindElement(tree, tree, "Source", NULL, NULL, MXML_DESCEND); /*this might return null*/
+	if ( node != NULL )
+	{
+		/*search or walk the tree?*/
+		/*print or store options?*/
+	}
+	else
+	{
+		/*No source node*/
+		/*print empty/defaults*/
+	}
+
 }
