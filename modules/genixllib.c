@@ -164,20 +164,34 @@ void printmenuMain(void)
 menu_items_t printmenuSource(mxml_node_t *tree)
 {
 	mxml_node_t *node=NULL;
+	mxml_node_t *SourceNode=NULL;
+
 	
 	system("clear");
 	printf("Source\n------\n");
 
-	node = mxmlFindElement(tree, tree, "Source", NULL, NULL, MXML_DESCEND); /*this might return null*/
-	if ( node != NULL )
+	SourceNode = mxmlFindElement(tree, tree, 		/*Search from the top*/
+				"Source", NULL, NULL, 		/*The Source element*/
+				MXML_DESCEND); 			/*Descending*/
+
+	/*the search might return null*/
+	if ( SourceNode != NULL )
 	{
 		/*search or walk the tree?*/
-		/*print or store options?*/
+		printf("1) Sources:\n");
+		node = mxmlWalkNext(node, tree, MXML_DESCEND); /* Advance a step, Descending*/
+		
+
 	}
 	else
 	{
 		/*No source node*/
-		/*print empty/defaults*/
+		/*print empty */
+		printf("1) Sources:\n"
+				"\t<Empty>\n"
+			"2) UserName: \n"
+			"3) Password: \n"
+			"4) CharSet: \n");
 	}
 
 }
