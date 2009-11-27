@@ -1,5 +1,5 @@
 you need to have a compiler, and the standard c libraries
-also need to have the source code of mini-xml http://www.minixml.org
+also need to have the includes of mini-xml http://www.minixml.org
 then, standing in the folder,
 make mkdir
 make
