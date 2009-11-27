@@ -1,0 +1,19 @@
+      ?xml
+        |
+        |
+ iSiloXDocumentList
+        |
+	|
+   iSiloXDocument
+        |
+	|
+      Source ----------------------------------------------------------------------------- Destination  ---------------------------------------------------------------------------------------------------------------------- LinkOptions
+        |                                                                                       |
+	|                                                                                       |
+      Sources -------------------------------- UserName --- Password ------ CharSet           Title ---- HotSync ------------- ActiveSync -------------------------- Files
+        |				 	   |		|	       |                |           |                       |                                  |
+	|					   |  		|	       |                |           |                       |                                  |
+       Path ------------------ Path	 	  Joe	  Joe's Password  iso-8859-1       My Document    Path ----- Path         Path ----- Path                    Path -------------------------- Path
+        |			|                                                                           |          |            |          |                       |                               |
+	|			|                                                                           |          |            |          |                       |                               |
+http://www.iSilo.com  http://www.iSiloX.com                                                              John Doe  Jane Doe:     PocketPC   PocketPC:    c:\My Documents\My Document.pdb    c:\Backup\My Document.pdb 
