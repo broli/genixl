@@ -1,0 +1,756 @@
+<map version="0.8.0">
+<!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
+<node CREATED="1259423785367" ID="Freemind_Link_1528532323" MODIFIED="1259424194591" TEXT="?xml version=&quot;1.0&quot;?">
+<node CREATED="1259429677653" ID="_" MODIFIED="1259429679910" POSITION="right" TEXT="iSiloXDocumentList">
+<node CREATED="1259429687170" ID="Freemind_Link_1595711494" MODIFIED="1259429687170" TEXT="iSiloXDocument">
+<node CREATED="1259429692081" ID="Freemind_Link_1051538730" MODIFIED="1259433632004" TEXT="Source" VSHIFT="-9">
+<node CREATED="1259429696327" HGAP="33" ID="Freemind_Link_1581853004" MODIFIED="1259430051088" TEXT="Sources" VSHIFT="-14">
+<node CREATED="1259429700520" HGAP="47" ID="Freemind_Link_509284678" MODIFIED="1259430061584" TEXT="Path" VSHIFT="-6">
+<node CREATED="1259429779215" ID="Freemind_Link_1460180699" MODIFIED="1259429796489" STYLE="fork" TEXT="http://www.iSilo.com">
+<edge WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259429707474" HGAP="45" ID="Freemind_Link_1710747624" MODIFIED="1259430063816" TEXT="Path" VSHIFT="10">
+<node CREATED="1259429817561" ID="Freemind_Link_1385743414" MODIFIED="1259429821809" STYLE="fork" TEXT="http://www.iSiloX.com">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+</node>
+<node CREATED="1259429713282" HGAP="44" ID="Freemind_Link_981565732" MODIFIED="1259430053520" TEXT="UserName" VSHIFT="-11">
+<node CREATED="1259429830257" ID="Freemind_Link_115467653" MODIFIED="1259429832423" STYLE="fork" TEXT="Joe">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259429718753" HGAP="39" ID="Freemind_Link_1692965258" MODIFIED="1259430055392" TEXT="Password" VSHIFT="-9">
+<node CREATED="1259429842778" ID="Freemind_Link_598643608" MODIFIED="1259429844199" STYLE="fork" TEXT="Joe&apos;s Password">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259429722991" HGAP="39" ID="Freemind_Link_1614098862" MODIFIED="1259430057640" TEXT="CharSet" VSHIFT="8">
+<node CREATED="1259429849915" ID="Freemind_Link_460073983" MODIFIED="1259429851421" STYLE="fork" TEXT="iso-8859-1">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+</node>
+<node CREATED="1259429727828" ID="Freemind_Link_1461946556" MODIFIED="1259434111332" TEXT="Destination" VSHIFT="17">
+<node CREATED="1259429871976" HGAP="33" ID="Freemind_Link_225141519" MODIFIED="1259430076089" TEXT="Title" VSHIFT="-7">
+<node CREATED="1259429877870" HGAP="31" ID="Freemind_Link_55752679" MODIFIED="1259430073921" STYLE="fork" TEXT="My Document" VSHIFT="-2">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259429885753" HGAP="43" ID="Freemind_Link_326686885" MODIFIED="1259430082609" TEXT="HotSync" VSHIFT="9">
+<node CREATED="1259429944905" ID="Freemind_Link_128817665" MODIFIED="1259429944905" TEXT="Path">
+<node CREATED="1259429890908" ID="Freemind_Link_1581619148" MODIFIED="1259429914030" STYLE="fork" TEXT="John Doe">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259429945642" ID="Freemind_Link_1702621650" MODIFIED="1259429945642" TEXT="Path">
+<node CREATED="1259429908044" ID="Freemind_Link_1275555516" MODIFIED="1259429915017" STYLE="fork" TEXT="John Doe:">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+</node>
+<node CREATED="1259429987023" HGAP="34" ID="Freemind_Link_1221150206" MODIFIED="1259430080857" TEXT="ActiveSync" VSHIFT="17">
+<node CREATED="1259429990975" ID="Freemind_Link_459171803" MODIFIED="1259429990975" TEXT="Path">
+<node CREATED="1259429996700" ID="Freemind_Link_1439321496" MODIFIED="1259430002736" STYLE="fork" TEXT="PocketPC">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259429991326" ID="Freemind_Link_1838899811" MODIFIED="1259429991326" TEXT="Path">
+<node CREATED="1259429997738" ID="Freemind_Link_1106367129" MODIFIED="1259430003300" STYLE="fork" TEXT="PocketPC:">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+</node>
+<node CREATED="1259430013158" HGAP="33" ID="Freemind_Link_323641726" MODIFIED="1259430211933" TEXT="Files" VSHIFT="23">
+<node CREATED="1259430021833" ID="Freemind_Link_1735993111" MODIFIED="1259430021833" TEXT="Path">
+<node CREATED="1259430027877" ID="Freemind_Link_68609053" MODIFIED="1259430029651" STYLE="fork" TEXT="c:\My Documents\My Document.pdb">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259430022280" ID="Freemind_Link_1292268332" MODIFIED="1259430022280" TEXT="Path">
+<node CREATED="1259430036301" ID="Freemind_Link_1570470503" MODIFIED="1259430037542" STYLE="fork" TEXT="c:\Backup\My Document.pdb">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1259430235893" ID="Freemind_Link_788397698" MODIFIED="1259434114932" TEXT="LinkOptions" VSHIFT="36">
+<node CREATED="1259430274501" ID="Freemind_Link_1916793350" MODIFIED="1259434200519" TEXT="MaximumDepth" VSHIFT="-15">
+<node COLOR="#990000" CREATED="1259430287537" ID="Freemind_Link_875626725" MODIFIED="1259430335061" STYLE="fork" TEXT="value=&quot;1&quot;/"/>
+</node>
+<node CREATED="1259430281192" ID="Freemind_Link_995852782" MODIFIED="1259434186526" TEXT="FollowOffsite" VSHIFT="-16">
+<node COLOR="#990000" CREATED="1259430292765" ID="Freemind_Link_1020986567" MODIFIED="1259430337684" STYLE="fork" TEXT="value=&quot;yes&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259430301851" ID="Freemind_Link_477650414" MODIFIED="1259434184094" TEXT="MaximumOffsiteDepth" VSHIFT="-15">
+<node COLOR="#990000" CREATED="1259430306597" ID="Freemind_Link_1624648879" MODIFIED="1259430339383" STYLE="fork" TEXT="value=&quot;1&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259430311169" ID="Freemind_Link_1078069745" MODIFIED="1259434182374" TEXT="SubDirOnly" VSHIFT="6">
+<node COLOR="#990000" CREATED="1259430315209" ID="Freemind_Link_885702339" MODIFIED="1259430339966" STYLE="fork" TEXT="value=&quot;no&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259430319531" ID="Freemind_Link_1553257518" MODIFIED="1259434179126" TEXT="UnresolvedDetail" VSHIFT="14">
+<node COLOR="#990000" CREATED="1259430323262" ID="Freemind_Link_813021388" MODIFIED="1259430340522" STYLE="fork" TEXT="value=&quot;include&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259430350461" ID="Freemind_Link_1206987878" MODIFIED="1259434177414" TEXT="Exclude" VSHIFT="29">
+<node CREATED="1259430354407" ID="Freemind_Link_1179513240" MODIFIED="1259430354407" TEXT="Pattern">
+<node CREATED="1259430359651" ID="Freemind_Link_1807591573" MODIFIED="1259430369073" STYLE="fork" TEXT="RE::table[1-9].jpg">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259430354776" ID="Freemind_Link_256448699" MODIFIED="1259430354776" TEXT="Pattern">
+<node CREATED="1259430363626" ID="Freemind_Link_438383644" MODIFIED="1259430369630" STYLE="fork" TEXT="WC::figures*plant?blue">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+</node>
+<node CREATED="1259430384935" ID="Freemind_Link_596237076" MODIFIED="1259434170718" TEXT="Include" VSHIFT="17">
+<node CREATED="1259430389462" ID="Freemind_Link_645062892" MODIFIED="1259430389462" TEXT="Pattern">
+<node CREATED="1259430393307" ID="Freemind_Link_206193556" MODIFIED="1259430394786" STYLE="fork" TEXT="RE:C:Table8">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+</node>
+<node CREATED="1259430415267" ID="Freemind_Link_528644313" MODIFIED="1259434173406" TEXT="ExternalDocuments" VSHIFT="-52">
+<node CREATED="1259430419785" ID="Freemind_Link_492065671" MODIFIED="1259430419785" TEXT="Specification">
+<node CREATED="1259430428200" ID="Freemind_Link_839537982" MODIFIED="1259430428200" TEXT="Path">
+<node CREATED="1259430436486" ID="Freemind_Link_1260524086" MODIFIED="1259430441593" STYLE="fork" TEXT="DocumentB">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259430432493" HGAP="21" ID="Freemind_Link_1932548289" MODIFIED="1259430559433" TEXT="Prefix" VSHIFT="-4">
+<node CREATED="1259430437059" ID="Freemind_Link_505587380" MODIFIED="1259430442120" STYLE="fork" TEXT="DocumentB">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259430504998" HGAP="24" ID="Freemind_Link_1863714488" MODIFIED="1259430561633" TEXT="KeepPrefix">
+<node COLOR="#990000" CREATED="1259430517655" ID="Freemind_Link_1040613093" MODIFIED="1259430520768" STYLE="fork" TEXT="value=&quot;no&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259430527433" HGAP="22" ID="Freemind_Link_508523166" MODIFIED="1259430556456" TEXT="MapFile" VSHIFT="5">
+<node CREATED="1259430532019" ID="Freemind_Link_1700064904" MODIFIED="1259430549307" STYLE="fork" TEXT="c:\Docs\DocumentB\DocumentB.map">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259430538845" ID="Freemind_Link_1253812954" MODIFIED="1259430555144" TEXT="Lookup" VSHIFT="6">
+<node COLOR="#990000" CREATED="1259430543166" ID="Freemind_Link_1207515915" MODIFIED="1259430546738" STYLE="fork" TEXT="value=&quot;ByID&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1259431373607" ID="Freemind_Link_1300372334" MODIFIED="1259434136893" TEXT="ImageOptions" VSHIFT="18">
+<node CREATED="1259431406019" ID="Freemind_Link_1701631504" MODIFIED="1259431406019" TEXT="AltText">
+<node COLOR="#990000" CREATED="1259431411675" ID="Freemind_Link_1413757842" MODIFIED="1259432401641" STYLE="fork" TEXT="value=&quot;exclude&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259431416025" HGAP="26" ID="Freemind_Link_431107696" MODIFIED="1259432485687" TEXT="Images">
+<node COLOR="#990000" CREATED="1259431419925" ID="Freemind_Link_664901602" MODIFIED="1259432402242" STYLE="fork" TEXT="value=&quot;include&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259431426680" HGAP="38" ID="Freemind_Link_42067465" MODIFIED="1259432487303" TEXT="ResizeLargeImages">
+<node COLOR="#990000" CREATED="1259431430309" ID="Freemind_Link_1800367902" MODIFIED="1259432402954" STYLE="fork" TEXT="value=&quot;yes&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259431436694" HGAP="50" ID="Freemind_Link_1806150464" MODIFIED="1259432488879" TEXT="MaximumWidth">
+<node COLOR="#990000" CREATED="1259431440556" ID="Freemind_Link_1577498717" MODIFIED="1259432403450" STYLE="fork" TEXT="value=&quot;144&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259431444771" HGAP="57" ID="Freemind_Link_536764252" MODIFIED="1259432491495" TEXT="MaximumHeight">
+<node COLOR="#990000" CREATED="1259431449483" ID="Freemind_Link_697745276" MODIFIED="1259432403914" STYLE="fork" TEXT="value=&quot;144&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259432152132" HGAP="69" ID="Freemind_Link_199647360" MODIFIED="1259432493143" TEXT="ImproveContrast">
+<node COLOR="#990000" CREATED="1259432155845" ID="Freemind_Link_1808370703" MODIFIED="1259432404354" STYLE="fork" TEXT="value=&quot;yes&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259432161553" HGAP="80" ID="Freemind_Link_663872074" MODIFIED="1259432495671" TEXT="Dither" VSHIFT="2">
+<node COLOR="#990000" CREATED="1259432165435" ID="Freemind_Link_394442754" MODIFIED="1259432404838" STYLE="fork" TEXT="value=&quot;yes&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259432170702" HGAP="61" ID="Freemind_Link_117551746" MODIFIED="1259432497848" TEXT="Compress" VSHIFT="2">
+<node COLOR="#990000" CREATED="1259432174790" ID="Freemind_Link_979267105" MODIFIED="1259432405304" STYLE="fork" TEXT="value=&quot;yes&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259432182357" HGAP="66" ID="Freemind_Link_1399185995" MODIFIED="1259432507992" TEXT="LossyLevel" VSHIFT="7">
+<node COLOR="#990000" CREATED="1259432187409" ID="Freemind_Link_90577140" MODIFIED="1259432405782" STYLE="fork" TEXT="value=&quot;none&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259432192471" HGAP="56" ID="Freemind_Link_963771952" MODIFIED="1259432506088" TEXT="LossyQuality" VSHIFT="4">
+<node COLOR="#990000" CREATED="1259432196723" ID="Freemind_Link_276179972" MODIFIED="1259432410177" STYLE="fork" TEXT="value=&quot;75&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259432201001" HGAP="44" ID="Freemind_Link_1081016033" MODIFIED="1259432510496" TEXT="BitDepth1" VSHIFT="2">
+<node COLOR="#990000" CREATED="1259432205753" ID="Freemind_Link_721113781" MODIFIED="1259432417025" STYLE="fork" TEXT="value=&quot;exclude&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259432209551" HGAP="35" ID="Freemind_Link_170141935" MODIFIED="1259432512128" TEXT="BitDepth2" VSHIFT="-2">
+<node COLOR="#990000" CREATED="1259432213297" ID="Freemind_Link_396566795" MODIFIED="1259432417860" STYLE="fork" TEXT="value=&quot;exclude&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259432217038" HGAP="28" ID="Freemind_Link_1455758089" MODIFIED="1259432513544" TEXT="BitDepth4">
+<node COLOR="#990000" CREATED="1259432220844" ID="Freemind_Link_686433227" MODIFIED="1259432418722" STYLE="fork" TEXT="value=&quot;exclude&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259432379871" HGAP="25" ID="Freemind_Link_1760086445" MODIFIED="1259432514680" TEXT="BitDepth8">
+<node COLOR="#990000" CREATED="1259432384474" ID="Freemind_Link_1586185302" MODIFIED="1259432419579" STYLE="fork" TEXT="value=&quot;exclude&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259432388563" ID="Freemind_Link_1493516487" MODIFIED="1259432517584" TEXT="BitDepth16" VSHIFT="2">
+<node COLOR="#990000" CREATED="1259432392454" ID="Freemind_Link_372199441" MODIFIED="1259432420300" STYLE="fork" TEXT="value=&quot;include&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+</node>
+<node CREATED="1259433119173" ID="Freemind_Link_1204899978" MODIFIED="1259434150493" TEXT="TableOptions" VSHIFT="33">
+<node CREATED="1259433128592" HGAP="23" ID="Freemind_Link_1122832076" MODIFIED="1259433786873" TEXT="IgnoreTables" VSHIFT="-6">
+<node COLOR="#990000" CREATED="1259433132236" ID="Freemind_Link_438186330" MODIFIED="1259433897920" STYLE="fork" TEXT="value=&quot;no&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259433136246" HGAP="41" ID="Freemind_Link_571020616" MODIFIED="1259433782553" TEXT="AddSeparators" VSHIFT="-5">
+<node COLOR="#990000" CREATED="1259433139383" ID="Freemind_Link_1279047257" MODIFIED="1259433898758" STYLE="fork" TEXT="value=&quot;no&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259433143470" HGAP="44" ID="Freemind_Link_578984241" MODIFIED="1259433769225" TEXT="UseMinimumDepth" VSHIFT="-8">
+<node COLOR="#990000" CREATED="1259433147268" ID="Freemind_Link_1802665920" MODIFIED="1259433899483" STYLE="fork" TEXT="value=&quot;no&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259433151190" HGAP="53" ID="Freemind_Link_1095871510" MODIFIED="1259433770977" TEXT="MinimumDepth" VSHIFT="-5">
+<node COLOR="#990000" CREATED="1259433154823" ID="Freemind_Link_1651463222" MODIFIED="1259433900060" STYLE="fork" TEXT="value=&quot;1&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259433157844" HGAP="52" ID="Freemind_Link_1959083090" MODIFIED="1259433794465" TEXT="UseMaximumBottomReach" VSHIFT="3">
+<node COLOR="#990000" CREATED="1259433161083" ID="Freemind_Link_466534326" MODIFIED="1259433900871" STYLE="fork" TEXT="value=&quot;no&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259433163987" HGAP="49" ID="Freemind_Link_1791761649" MODIFIED="1259433792705" TEXT="MaximumBottomReach" VSHIFT="8">
+<node COLOR="#990000" CREATED="1259433166636" ID="Freemind_Link_317863702" MODIFIED="1259433904943" STYLE="fork" TEXT="value=&quot;1&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259433170504" HGAP="42" ID="Freemind_Link_508149585" MODIFIED="1259433791081" TEXT="UnfoldFullPageTables" VSHIFT="10">
+<node COLOR="#990000" CREATED="1259433173699" ID="Freemind_Link_498019431" MODIFIED="1259433906055" STYLE="fork" TEXT="value=&quot;no&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259433176327" HGAP="23" ID="Freemind_Link_55091826" MODIFIED="1259433909349" TEXT="IgnorePixelWidths" VSHIFT="6">
+<node COLOR="#990000" CREATED="1259433179146" ID="Freemind_Link_1352279364" MODIFIED="1259433907430" STYLE="fork" TEXT="value=&quot;no&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+</node>
+<node CREATED="1259433852770" HGAP="32" ID="Freemind_Link_1482381813" MODIFIED="1259434289370" TEXT="ColorOptions" VSHIFT="50">
+<node CREATED="1259433864533" HGAP="27" ID="Freemind_Link_485926865" MODIFIED="1259433934054" TEXT="BackgroundColors" VSHIFT="-2">
+<node COLOR="#990000" CREATED="1259433873121" ID="Freemind_Link_1182663351" MODIFIED="1259433928560" STYLE="fork" TEXT="value=&quot;keep&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259433868259" HGAP="26" ID="Freemind_Link_1493002880" MODIFIED="1259433931094" TEXT="TextColors" VSHIFT="4">
+<node COLOR="#990000" CREATED="1259433873851" ID="Freemind_Link_902753057" MODIFIED="1259433929187" STYLE="fork" TEXT="value=&quot;keep&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+</node>
+<node CREATED="1259434271300" ID="Freemind_Link_1247370008" MODIFIED="1259434286618" TEXT="MarginOptions" VSHIFT="25">
+<node CREATED="1259434278784" ID="Freemind_Link_1234919565" MODIFIED="1259434278784" TEXT="LeftRightMargins">
+<node COLOR="#990000" CREATED="1259433873851" ID="Freemind_Link_755218689" MODIFIED="1259433929187" STYLE="fork" TEXT="value=&quot;keep&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259434283938" ID="Freemind_Link_1907919425" MODIFIED="1259434283938" TEXT="LeftRightPadding">
+<node COLOR="#990000" CREATED="1259433873851" ID="Freemind_Link_969639093" MODIFIED="1259433929187" STYLE="fork" TEXT="value=&quot;keep&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+</node>
+<node CREATED="1259434357112" ID="Freemind_Link_72729370" MODIFIED="1259434396445" TEXT="SecurityOptions" VSHIFT="34">
+<node CREATED="1259434362745" ID="Freemind_Link_1646633799" MODIFIED="1259434362745" TEXT="Convert">
+<node COLOR="#990000" CREATED="1259434382024" ID="Freemind_Link_162421525" MODIFIED="1259434384563" STYLE="fork" TEXT="value=&quot;allow&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259434366031" ID="Freemind_Link_1819746152" MODIFIED="1259434366031" TEXT="CopyBeam">
+<node COLOR="#990000" CREATED="1259434382024" ID="Freemind_Link_208138780" MODIFIED="1259434384563" STYLE="fork" TEXT="value=&quot;allow&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259434370009" ID="Freemind_Link_807815000" MODIFIED="1259434370009" TEXT="CopyAndPaste">
+<node COLOR="#990000" CREATED="1259434382024" ID="Freemind_Link_1396626977" MODIFIED="1259434384563" STYLE="fork" TEXT="value=&quot;allow&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259434653531" ID="Freemind_Link_780033777" MODIFIED="1259434653531" TEXT="Modify">
+<node COLOR="#990000" CREATED="1259434661099" ID="Freemind_Link_288769608" MODIFIED="1259434664400" STYLE="fork" TEXT="value=&quot;disallow&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259434657522" ID="Freemind_Link_889907943" MODIFIED="1259434657522" TEXT="Print">
+<node COLOR="#990000" CREATED="1259434661099" ID="Freemind_Link_767057433" MODIFIED="1259434664400" STYLE="fork" TEXT="value=&quot;disallow&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259434708069" ID="Freemind_Link_1150425568" MODIFIED="1259434737872" TEXT="Expiration" VSHIFT="11">
+<node CREATED="1259434713472" ID="Freemind_Link_1346041074" MODIFIED="1259434713472" TEXT="Expires">
+<node COLOR="#990000" CREATED="1259434720517" ID="Freemind_Link_1689659708" MODIFIED="1259434729310" STYLE="fork" TEXT="value=&quot;no&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259434717548" ID="Freemind_Link_1738888710" MODIFIED="1259434717548" TEXT="Date">
+<node COLOR="#990000" CREATED="1259434723264" ID="Freemind_Link_1585444802" MODIFIED="1259434730176" STYLE="fork" TEXT="value=&quot;20030529&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+</node>
+<node CREATED="1259434756629" ID="Freemind_Link_302575314" MODIFIED="1259434781634" TEXT="Password" VSHIFT="8">
+<node CREATED="1259434760012" ID="Freemind_Link_1861655323" MODIFIED="1259434760012" TEXT="Require">
+<node COLOR="#990000" CREATED="1259434770819" ID="Freemind_Link_1733133476" MODIFIED="1259434777940" STYLE="fork" TEXT="value=&quot;no&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259434764444" ID="Freemind_Link_1466474503" MODIFIED="1259434764444" TEXT="Password">
+<node CREATED="1259434774096" ID="Freemind_Link_144908216" MODIFIED="1259434788747" STYLE="fork" TEXT="MyPassword">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+</node>
+<node CREATED="1259434807585" ID="Freemind_Link_1956067097" MODIFIED="1259434826467" TEXT="RegistrationCode" VSHIFT="9">
+<node CREATED="1259434810832" ID="Freemind_Link_540638446" MODIFIED="1259434810832" TEXT="Require">
+<node COLOR="#990000" CREATED="1259434816906" ID="Freemind_Link_63392493" MODIFIED="1259434830916" STYLE="fork" TEXT="value=&quot;no&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259434813802" ID="Freemind_Link_218511800" MODIFIED="1259434813802" TEXT="DocumentID">
+<node CREATED="1259434819620" ID="Freemind_Link_328503882" MODIFIED="1259434832567" STYLE="fork" TEXT="UniqueID55PC">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1259434865037" ID="Freemind_Link_1440511295" MODIFIED="1259435013289" TEXT="TextOptions" VSHIFT="35">
+<node CREATED="1259434875092" ID="Freemind_Link_453475884" MODIFIED="1259434875092" TEXT="PreUseMonospaceFont">
+<node COLOR="#990000" CREATED="1259434966819" ID="Freemind_Link_350531014" MODIFIED="1259435001436" STYLE="fork" TEXT="value=&quot;yes&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259434878081" ID="Freemind_Link_320048340" MODIFIED="1259434878081" TEXT="PreSingleLineBreaks">
+<node COLOR="#990000" CREATED="1259434974652" ID="Freemind_Link_1844117822" MODIFIED="1259435002089" STYLE="fork" TEXT="value=&quot;KeepAll&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259434880775" ID="Freemind_Link_636390047" MODIFIED="1259434880775" TEXT="ProcessLineBreaks">
+<node COLOR="#990000" CREATED="1259434978238" ID="Freemind_Link_1211296927" MODIFIED="1259435002613" STYLE="fork" TEXT="value=&quot;yes&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259434883715" ID="Freemind_Link_1939917320" MODIFIED="1259434883715" TEXT="ConvertSingleLineBreaks">
+<node COLOR="#990000" CREATED="1259434981194" ID="Freemind_Link_289052651" MODIFIED="1259435003086" STYLE="fork" TEXT="value=&quot;no&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259434888165" ID="Freemind_Link_816158413" MODIFIED="1259434888165" TEXT="Preformatted">
+<node COLOR="#990000" CREATED="1259434984209" ID="Freemind_Link_1929073799" MODIFIED="1259435003732" STYLE="fork" TEXT="value=&quot;no&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259434891070" ID="Freemind_Link_1591996131" MODIFIED="1259434891070" TEXT="UseMonospaceFont">
+<node COLOR="#990000" CREATED="1259434987055" ID="Freemind_Link_1640772593" MODIFIED="1259435004375" STYLE="fork" TEXT="value=&quot;no&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259434893856" ID="Freemind_Link_1683624232" MODIFIED="1259434893856" TEXT="MonospaceFontSize">
+<node COLOR="#990000" CREATED="1259434993795" ID="Freemind_Link_316003102" MODIFIED="1259435004993" STYLE="fork" TEXT="value=&quot;10&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259434898207" ID="Freemind_Link_970636710" MODIFIED="1259434898207" TEXT="TabStopWidth">
+<node COLOR="#990000" CREATED="1259434996987" ID="Freemind_Link_727155435" MODIFIED="1259435005582" STYLE="fork" TEXT="value=&quot;8&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+</node>
+<node CREATED="1259435052453" ID="Freemind_Link_772276673" MODIFIED="1259435102660" TEXT="DocumentOptions" VSHIFT="29">
+<node CREATED="1259435057797" ID="Freemind_Link_275794378" MODIFIED="1259435057797" TEXT="PageBounds">
+<node COLOR="#990000" CREATED="1259435065393" ID="Freemind_Link_1547675591" MODIFIED="1259435106313" STYLE="fork" TEXT="value=&quot;hard&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259435061476" ID="Freemind_Link_1656564977" MODIFIED="1259435061476" TEXT="UseDefaultCategory">
+<node COLOR="#990000" CREATED="1259435068368" ID="Freemind_Link_1388301740" MODIFIED="1259435106990" STYLE="fork" TEXT="value=&quot;no&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259435071773" ID="Freemind_Link_210709091" MODIFIED="1259435071773" TEXT="DefaultCategory">
+<node CREATED="1259435074542" ID="Freemind_Link_1861215463" MODIFIED="1259435114039" STYLE="fork" TEXT="Unfiled">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259435077418" ID="Freemind_Link_1614359949" MODIFIED="1259435077418" TEXT="HomePageNumber">
+<node COLOR="#990000" CREATED="1259435082848" ID="Freemind_Link_758488166" MODIFIED="1259435107753" STYLE="fork" TEXT="value=&quot;1&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259435086122" ID="Freemind_Link_481812177" MODIFIED="1259435086122" TEXT="OpenHomePageOnDateChange">
+<node COLOR="#990000" CREATED="1259435088933" ID="Freemind_Link_1818703745" MODIFIED="1259435108513" STYLE="fork" TEXT="value=&quot;yes&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259435093757" ID="Freemind_Link_1624109702" MODIFIED="1259435093757" TEXT="CharSet">
+<node CREATED="1259435096610" ID="Freemind_Link_844715253" MODIFIED="1259435115042" STYLE="fork" TEXT="Windows-1252">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+</node>
+<node CREATED="1259435524415" ID="Freemind_Link_303961324" MODIFIED="1259439670592" TEXT="Bookmarks" VSHIFT="29">
+<node CREATED="1259435532397" ID="Freemind_Link_1792229181" MODIFIED="1259435532397" TEXT="Document">
+<node CREATED="1259435535810" ID="Freemind_Link_1217323351" MODIFIED="1259435535810" TEXT="UseFile">
+<node COLOR="#990000" CREATED="1259435540383" ID="Freemind_Link_749315827" MODIFIED="1259435619352" STYLE="fork" TEXT="value=&quot;no&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259435544730" ID="Freemind_Link_683197580" MODIFIED="1259435544730" TEXT="Path">
+<node CREATED="1259435547584" ID="Freemind_Link_210475359" MODIFIED="1259435628963" STYLE="fork" TEXT="c:\docs\bookmarks.htm">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259435551389" ID="Freemind_Link_81253845" MODIFIED="1259435551389" TEXT="UseNamedAnchors">
+<node COLOR="#990000" CREATED="1259435555925" ID="Freemind_Link_1880264407" MODIFIED="1259435620191" STYLE="fork" TEXT="value=&quot;no&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259435573587" ID="Freemind_Link_1804592257" MODIFIED="1259435573587" TEXT="NamedAnchorType">
+<node COLOR="#990000" CREATED="1259435580755" ID="Freemind_Link_1973907102" MODIFIED="1259435620845" STYLE="fork" TEXT="value=&quot;WordWebPage&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259435584684" ID="Freemind_Link_627167456" MODIFIED="1259435584684" TEXT="UseIncludeFilter">
+<node COLOR="#990000" CREATED="1259435588106" ID="Freemind_Link_418635296" MODIFIED="1259435621469" STYLE="fork" TEXT="value=&quot;no&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259435591864" ID="Freemind_Link_773482936" MODIFIED="1259435591864" TEXT="IncludePrefix">
+<node CREATED="1259435596476" ID="Freemind_Link_564894354" MODIFIED="1259435629967" STYLE="fork" TEXT="bm">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259435599516" ID="Freemind_Link_693807923" MODIFIED="1259435599516" TEXT="UseExcludeFilter">
+<node COLOR="#990000" CREATED="1259435602129" ID="Freemind_Link_1568491140" MODIFIED="1259435622645" STYLE="fork" TEXT="value=&quot;no&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259435604794" ID="Freemind_Link_1698984946" MODIFIED="1259435604794" TEXT="ExcludePrefix">
+<node CREATED="1259435607680" ID="Freemind_Link_1199287994" MODIFIED="1259435630900" STYLE="fork" TEXT="bm_">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1259439721028" ID="Freemind_Link_485150699" MODIFIED="1259439785292" TEXT="LastConversion" VSHIFT="12">
+<node CREATED="1259439735145" ID="Freemind_Link_1546406419" MODIFIED="1259439735145" TEXT="Date">
+<node CREATED="1259439749872" ID="Freemind_Link_1541065690" MODIFIED="1259439782187" STYLE="fork" TEXT="2002/08/01 08:12:02">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259439739023" ID="Freemind_Link_1552696963" MODIFIED="1259439739023" TEXT="Size">
+<node COLOR="#990000" CREATED="1259439755904" ID="Freemind_Link_184176342" MODIFIED="1259439780235" STYLE="fork" TEXT="value=&quot;123456789&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259439742438" ID="Freemind_Link_820706046" MODIFIED="1259439742438" TEXT="Status">
+<node CREATED="1259439776124" ID="Freemind_Link_820169347" MODIFIED="1259439782844" STYLE="fork" TEXT="Conversion successful">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+</node>
+<node CREATED="1259439965476" ID="Freemind_Link_498270521" MODIFIED="1259440043748" TEXT="Messages" VSHIFT="37">
+<node CREATED="1259439973104" ID="Freemind_Link_1241473899" MODIFIED="1259439973104" TEXT="Title">
+<node CREATED="1259439979002" ID="Freemind_Link_523867643" MODIFIED="1259440312697" STYLE="fork" TEXT="My Document&apos;s Full Title Is Written Here">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259439982724" ID="Freemind_Link_67330225" MODIFIED="1259439982724" TEXT="Version">
+<node CREATED="1259440068157" ID="Freemind_Link_617913190" MODIFIED="1259440313376" STYLE="fork" TEXT="v. 2.1">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259439987206" ID="Freemind_Link_198253152" MODIFIED="1259439987206" TEXT="Copyright">
+<node CREATED="1259440074001" ID="Freemind_Link_1652814781" MODIFIED="1259440313974" STYLE="fork" TEXT="(C) 2003 ACME, Inc.">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259439990591" ID="Freemind_Link_775394175" MODIFIED="1259439990591" TEXT="Notes">
+<node CREATED="1259440079890" ID="Freemind_Link_435444772" MODIFIED="1259440314574" STYLE="fork" TEXT="This document is protected by copyright law.">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259439996675" ID="Freemind_Link_646368566" MODIFIED="1259439996675" TEXT="AuthorName">
+<node CREATED="1259440084751" ID="Freemind_Link_574351381" MODIFIED="1259440315173" STYLE="fork" TEXT="Yar Givin">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259440000420" ID="Freemind_Link_792904537" MODIFIED="1259440000420" TEXT="AuthorContact">
+<node CREATED="1259440096379" ID="Freemind_Link_77390745" MODIFIED="1259440315770" STYLE="fork" TEXT="yar@givin.com">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259440003439" ID="Freemind_Link_591492896" MODIFIED="1259440003439" TEXT="AuthorNotes">
+<node CREATED="1259440103791" ID="Freemind_Link_720632047" MODIFIED="1259440316340" STYLE="fork" TEXT="Email me with your comments.">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259440009307" ID="Freemind_Link_182549162" MODIFIED="1259440009307" TEXT="PublisherName">
+<node CREATED="1259440108789" ID="Freemind_Link_1533580717" MODIFIED="1259440317096" STYLE="fork" TEXT="Tasteful Publishers, Inc.">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259440012459" ID="Freemind_Link_1003077902" MODIFIED="1259440012459" TEXT="PublisherContact">
+<node CREATED="1259440114603" ID="Freemind_Link_185880830" MODIFIED="1259440318921" STYLE="fork" TEXT="contact@tastefulpublishers.com">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259440015951" ID="Freemind_Link_77203770" MODIFIED="1259440015951" TEXT="PublisherNotes">
+<node CREATED="1259440121615" ID="Freemind_Link_1493055212" MODIFIED="1259440319750" STYLE="fork" TEXT="Publishers of anything.">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259440020742" ID="Freemind_Link_400344918" MODIFIED="1259440020742" TEXT="RegCodePreMsg">
+<node CREATED="1259440135535" ID="Freemind_Link_1415671153" MODIFIED="1259440321718" STYLE="fork" TEXT="This document requires that you enter a registration code.  If you do not have one, please visit http://www.acme.com for more information.">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259440026639" ID="Freemind_Link_357379555" MODIFIED="1259440026639" TEXT="RegCodeFailedMsg">
+<node CREATED="1259440252347" ID="Freemind_Link_445340264" MODIFIED="1259440325790" STYLE="fork" TEXT="To purchase this document, please visit:\nhttp://www.acme.com">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259440030174" ID="Freemind_Link_1565012645" MODIFIED="1259440030174" TEXT="RegCodeCancelMsg">
+<node CREATED="1259440259464" ID="Freemind_Link_1372287623" MODIFIED="1259440328404" STYLE="fork" TEXT="To purchase this document, please visit:\nhttp://www.acme.com">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259440033489" ID="Freemind_Link_459326208" MODIFIED="1259440033489" TEXT="PasswordPreMsg">
+<node CREATED="1259440268953" ID="Freemind_Link_213208895" MODIFIED="1259440329274" STYLE="fork" TEXT="This document requires a password.">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259440036920" ID="Freemind_Link_172037016" MODIFIED="1259440036920" TEXT="PasswordFailedMsg">
+<node CREATED="1259440273805" ID="Freemind_Link_1411981523" MODIFIED="1259440330240" STYLE="fork" TEXT="Note that it is a felony to attempt to access this document without authorization.">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259440040571" ID="Freemind_Link_174291281" MODIFIED="1259440040571" TEXT="PasswordCancelMsg">
+<node CREATED="1259440278503" ID="Freemind_Link_675390593" MODIFIED="1259440331493" STYLE="fork" TEXT="Consult your administrator for more information.">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259440048461" ID="Freemind_Link_506470106" MODIFIED="1259440048461" TEXT="ExpiredMsg">
+<node CREATED="1259440285340" ID="Freemind_Link_1364354792" MODIFIED="1259441637518" STYLE="fork" TEXT="This document has expired, please visit http://www.acme.org for an updated version.">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+</node>
+<node CREATED="1259440651411" ID="Freemind_Link_762391165" MODIFIED="1259441506236" TEXT="CookieOptions" VSHIFT="19">
+<node CREATED="1259440658463" ID="Freemind_Link_399966429" MODIFIED="1259440658463" TEXT="SendCookies">
+<node COLOR="#990000" CREATED="1259440669736" ID="Freemind_Link_1254627117" MODIFIED="1259441624169" STYLE="fork" TEXT="value=&quot;no&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259440665421" ID="Freemind_Link_1764754343" MODIFIED="1259440665421" TEXT="ReceiveCookies">
+<node COLOR="#990000" CREATED="1259440670480" ID="Freemind_Link_1355712141" MODIFIED="1259441624969" STYLE="fork" TEXT="value=&quot;no&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259440684817" ID="Freemind_Link_262016554" MODIFIED="1259441503931" TEXT="Cookies" VSHIFT="22">
+<node CREATED="1259440689978" ID="Freemind_Link_1809954785" MODIFIED="1259440689978" TEXT="Cookie">
+<node CREATED="1259440696110" ID="Freemind_Link_1424863757" MODIFIED="1259440696110" TEXT="ReadOnly">
+<node COLOR="#990000" CREATED="1259440709889" ID="Freemind_Link_1488434525" MODIFIED="1259441628901" STYLE="fork" TEXT="value=&quot;no&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259440700228" ID="Freemind_Link_265593262" MODIFIED="1259440700228" TEXT="DoNotSend">
+<node COLOR="#990000" CREATED="1259440710585" ID="Freemind_Link_962393929" MODIFIED="1259441629624" STYLE="fork" TEXT="value=&quot;no&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259440703221" ID="Freemind_Link_1587622345" MODIFIED="1259440703221" TEXT="Discard">
+<node COLOR="#990000" CREATED="1259440711207" ID="Freemind_Link_303516518" MODIFIED="1259441630211" STYLE="fork" TEXT="value=&quot;no&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259440706177" ID="Freemind_Link_1928045871" MODIFIED="1259440706177" TEXT="Secure">
+<node COLOR="#990000" CREATED="1259440711841" ID="Freemind_Link_980715400" MODIFIED="1259441630747" STYLE="fork" TEXT="value=&quot;no&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259440725782" ID="Freemind_Link_301523959" MODIFIED="1259440725782" TEXT="Name">
+<node CREATED="1259440729636" ID="Freemind_Link_691167107" MODIFIED="1259441641071" STYLE="fork" TEXT="TOKEN">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259440733677" ID="Freemind_Link_297869411" MODIFIED="1259440733677" TEXT="Value">
+<node CREATED="1259440746762" ID="Freemind_Link_1851454433" MODIFIED="1259441641729" STYLE="fork" TEXT="48A897ZUIO98">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259440752116" ID="Freemind_Link_155871768" MODIFIED="1259440752116" TEXT="Expires">
+<node CREATED="1259440757476" ID="Freemind_Link_1802582571" MODIFIED="1259441642512" STYLE="fork" TEXT="2015/12/25 08:52:12">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259440760682" ID="Freemind_Link_1161547524" MODIFIED="1259440760682" TEXT="Version">
+<node CREATED="1259440765167" ID="Freemind_Link_1249346917" MODIFIED="1259441643243" STYLE="fork" TEXT="1">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259440770007" ID="Freemind_Link_1829623927" MODIFIED="1259440770007" TEXT="Path">
+<node CREATED="1259440773130" ID="Freemind_Link_629943168" MODIFIED="1259441643960" STYLE="fork" TEXT="/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259440776393" ID="Freemind_Link_426625373" MODIFIED="1259440776393" TEXT="Port">
+<node CREATED="1259440780240" ID="Freemind_Link_876147412" MODIFIED="1259441644591" STYLE="fork" TEXT="80,8000">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259440783893" ID="Freemind_Link_684195974" MODIFIED="1259440783893" TEXT="Domain">
+<node CREATED="1259440787359" ID="Freemind_Link_1744655694" MODIFIED="1259441645153" STYLE="fork" TEXT=".foo.com">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259440790819" ID="Freemind_Link_15771776" MODIFIED="1259440790819" TEXT="Comments">
+<node CREATED="1259440793478" ID="Freemind_Link_1251270708" MODIFIED="1259441645792" STYLE="fork" TEXT="none">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259440820113" ID="Freemind_Link_1156465571" MODIFIED="1259440820113" TEXT="CommentURL">
+<node CREATED="1259440823812" ID="Freemind_Link_820085416" MODIFIED="1259441646418" STYLE="fork" TEXT="http://www.foo.com/cookies.htm">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1259441609459" ID="Freemind_Link_966123661" MODIFIED="1259441610339" TEXT="Scheduling">
+<node CREATED="1259441791273" ID="Freemind_Link_1733587670" MODIFIED="1259441791273" TEXT="Disable">
+<node COLOR="#990000" CREATED="1259441795381" ID="Freemind_Link_696349138" MODIFIED="1259443452506" STYLE="fork" TEXT="value=&quot;no&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259441799902" ID="Freemind_Link_1679320053" MODIFIED="1259441799902" TEXT="LastConversion">
+<node CREATED="1259441808216" ID="Freemind_Link_600682053" MODIFIED="1259443467221" STYLE="fork" TEXT="2003/03/11 16:23:02">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259441803581" ID="Freemind_Link_1456775719" MODIFIED="1259441803581" TEXT="NextConversion">
+<node CREATED="1259441812709" ID="Freemind_Link_725790999" MODIFIED="1259443467873" STYLE="fork" TEXT="2003/03/12 15:17:00">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259442094462" ID="Freemind_Link_1494149862" MODIFIED="1259442094462" TEXT="Schedules">
+<node CREATED="1259443168392" ID="Freemind_Link_1283691739" MODIFIED="1259443168392" TEXT="Schedule">
+<node CREATED="1259443171691" ID="Freemind_Link_713198915" MODIFIED="1259443171691" TEXT="Disable">
+<node COLOR="#990000" CREATED="1259443174713" ID="Freemind_Link_597027206" MODIFIED="1259443454385" STYLE="fork" TEXT="value=&quot;no&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259443178642" ID="Freemind_Link_1533622978" MODIFIED="1259443178642" TEXT="LastConversion">
+<node CREATED="1259443188961" ID="Freemind_Link_275111753" MODIFIED="1259443468598" STYLE="fork" TEXT="2003/03/11 16:23:02">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259443183333" ID="Freemind_Link_958745971" MODIFIED="1259443183333" TEXT="NextConversion">
+<node CREATED="1259443192825" ID="Freemind_Link_1971732445" MODIFIED="1259443469100" STYLE="fork" TEXT="2003/03/12 15:17:00">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259443214579" ID="Freemind_Link_1608295364" MODIFIED="1259443214579" TEXT="Frequency">
+<node COLOR="#990000" CREATED="1259443253673" ID="Freemind_Link_1267453657" MODIFIED="1259443455555" STYLE="fork" TEXT="value=&quot;hourly&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259443224129" ID="Freemind_Link_1268068191" MODIFIED="1259443224129" TEXT="Time">
+<node COLOR="#990000" CREATED="1259443257515" ID="Freemind_Link_950823745" MODIFIED="1259443456300" STYLE="fork" TEXT="value=&quot;17&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259443227357" ID="Freemind_Link_177486004" MODIFIED="1259443227357" TEXT="Weekday">
+<node COLOR="#990000" CREATED="1259443260356" ID="Freemind_Link_949780829" MODIFIED="1259443456907" STYLE="fork" TEXT="value=&quot;Mon&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259443230368" ID="Freemind_Link_771611188" MODIFIED="1259443230368" TEXT="Day">
+<node COLOR="#990000" CREATED="1259443267050" ID="Freemind_Link_1740668568" MODIFIED="1259443457620" STYLE="fork" TEXT="value=&quot;31&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259443233034" ID="Freemind_Link_179535976" MODIFIED="1259443233034" TEXT="Type">
+<node COLOR="#990000" CREATED="1259443270462" ID="Freemind_Link_96903165" MODIFIED="1259443458172" STYLE="fork" TEXT="value=&quot;every&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259443235743" ID="Freemind_Link_1215415363" MODIFIED="1259443235743" TEXT="Every">
+<node COLOR="#990000" CREATED="1259443273466" ID="Freemind_Link_1022130455" MODIFIED="1259443458687" STYLE="fork" TEXT="value=&quot;1&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1259443313585" ID="Freemind_Link_1577425293" MODIFIED="1259443316318" TEXT="Targets">
+<node CREATED="1259443320199" ID="Freemind_Link_1637303197" MODIFIED="1259443320199" TEXT="Export">
+<node COLOR="#990000" CREATED="1259443323360" ID="Freemind_Link_1713198840" MODIFIED="1259443461501" STYLE="fork" TEXT="value=&quot;all&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259443335670" ID="Freemind_Link_1870931364" MODIFIED="1259443335670" TEXT="ByFile">
+<node CREATED="1259443340260" ID="Freemind_Link_1336222929" MODIFIED="1259443470796" STYLE="fork" TEXT="c:\Docs\export.htm">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259443344162" ID="Freemind_Link_346711242" MODIFIED="1259443344162" TEXT="Lookup">
+<node COLOR="#990000" CREATED="1259443347980" ID="Freemind_Link_750857376" MODIFIED="1259443462198" STYLE="fork" TEXT="value=&quot;ByName&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259443356473" ID="Freemind_Link_642621535" MODIFIED="1259443356473" TEXT="GenerateMapFile">
+<node COLOR="#990000" CREATED="1259443415766" ID="Freemind_Link_1520314108" MODIFIED="1259443462840" STYLE="fork" TEXT="value=&quot;yes&quot;/">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+<node CREATED="1259443420115" ID="Freemind_Link_1903138473" MODIFIED="1259443420115" TEXT="MapFile">
+<node CREATED="1259443423204" ID="Freemind_Link_779398064" MODIFIED="1259443471478" STYLE="fork" TEXT="c:\Docs\DocumentX.map">
+<edge COLOR="#808080" WIDTH="thin"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</map>
