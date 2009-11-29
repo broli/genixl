@@ -191,7 +191,7 @@ menu_items_t printmenuSource(mxml_node_t *tree)
 			Pathnode = mxmlFindElement(SourcesNode,SourcesNode,	/*Search inside the Sources node*/
 							"Path", NULL, NULL,	/*the path node*/
 							MXML_DESCEND);          /*Descending*/
-			if ( Pathnode != NULL)
+			if ( Pathnode == NULL)
 			{
 				/*there is a Sources node, but no paths*/
 				printf("\t\t<n/a>\n");
