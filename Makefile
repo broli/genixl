@@ -1,9 +1,9 @@
 #This makefile has all the debugging info enabled, and no optimization, because is a development file
 #i wont even try to make a more formal one until i finish, or understand howto use autoconf :P
 
-CFLAGS=$(pkg-config --cflags mxml) -ggdb3 -Wall -Wextra -pedantic -ansi -Wmissing-prototypes  -Wstrict-prototypes -Wcast-qual -Wcast-align -Wundef 
+CFLAGS=`pkg-config --cflags mxml` -ggdb3 -Wall -Wextra -pedantic -ansi -Wmissing-prototypes  -Wstrict-prototypes -Wcast-qual -Wcast-align -Wundef 
 
-LIBS=$(pkg-config --libs mxml)
+LIBS=`pkg-config --libs mxml`
 
 objects = obj/genixl-cli.o obj/genixllib.o obj/ixlmxml.o
 

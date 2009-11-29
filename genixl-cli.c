@@ -41,15 +41,18 @@ int main(int argc, char *argv[])
 		/*not critical, but lets just warn the user*/
 		perror("Warning: Cant set locale, check your env\n");
 	}
-	if ( argc > 1 )
+	if ( argc < 1 )
 	{
 		/*the app was run with parameters*/
+		printf("The apps needs 1 parameter\n");
+		return EXIT_FAILURE;
 	}
 
 	fp = fopen(argv[1], "r");
 	tree = mxmlLoadFile(NULL, fp, MXML_OPAQUE_CALLBACK);
 
-	printmenu(MENU_MAIN,tree);
+	printmenu(MENU_MAIN,NULL);
+	printmenu(MENU_SOURCE,tree);
 
 	mxmlDelete(tree);
 	fclose(fp);

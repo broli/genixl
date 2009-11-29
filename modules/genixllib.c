@@ -48,13 +48,12 @@ menu_items_t printmenu(menu_items_t menu,mxml_node_t *tree)
 
 	if ( menu == MENU_MAIN )
 	{
-		/*TODO make main menu*/
 		printmenuMain();
 		return MENU_MAIN;
 	}
 	else if ( menu == MENU_SOURCE )
 	{
-		/*TODO make source menu*/
+		printmenuSource(tree);
 		return MENU_SOURCE;
 	}
 	else if ( menu == MENU_DESTINATION )
