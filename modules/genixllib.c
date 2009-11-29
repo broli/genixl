@@ -162,9 +162,12 @@ void printmenuMain(void)
 
 menu_items_t printmenuSource(mxml_node_t *tree)
 {
-	mxml_node_t *SourceNode=NULL;
-	mxml_node_t *SourcesNode=NULL;
-	mxml_node_t *Pathnode=NULL;
+	mxml_node_t *node=NULL; /*temporal node, used to walk*/
+	mxml_node_t *SourceNode=NULL; /*pointer to the Source node, topnode of this function*/
+	mxml_node_t *SourcesNode=NULL; /*pointer to the Sources node*/
+	mxml_node_t *Pathnode=NULL; /*pointer to a path node*/
+
+	char *charPtr=NULL; /*pointer to hold strstr return value*/
 
 	
 	system("clear");
@@ -190,12 +193,53 @@ menu_items_t printmenuSource(mxml_node_t *tree)
 							MXML_DESCEND);          /*Descending*/
 			while ( Pathnode != NULL )
 			{
-				printf("\t\t%s",Pathnode->value.element.name);
+				node = mxmlWalkNext ( Pathnode, Pathnode, MXML_DESCEND); /*walk*/
+				if ( node->type == MXML_OPAQUE )
+				{
+					/*its opaque, so it might be the data, or white space*/
+					
+					charPtr = strstr( node->value.opaque,"\n"); /*search for new line*/
+					if (charPtr == NULL )
+					{
+						/*no whitespace, so this is the data*/
+						printf("\t\t%s\n",node->value.opaque);
+					}
+					else
+					{
+						/*whitespace, so this is not the node i need*/
+						node = mxmlWalkNext ( node,  Pathnode, MXML_DESCEND);
+						if ( node->type == MXML_OPAQUE )
+						{
+							charPtr = strstr( node->value.opaque,"\n"); /*search for new line*/
+							if (charPtr == NULL )
+							{
+								/*no whitespace, so this is the data*/
+								printf("\t\t%s\n",node->value.opaque);
+							}
+						}
+						else
+						{
+							/*if this is not opaque, we walked in the next path
+							 * dont print anythin, and dont do anything
+							 * the next iteration of the loop will search from the 
+							 * previus Path node and find this one */
+						}
+
+					}
+				}
+				else
+				{
+					/*its not opaque, i dont know what to do*/
+					/*TODO analize this situation, if its posible, and
+					 * what to do when encountered*/
+				}
+
+				/*advance Pathnode to the next path*/
 				Pathnode = mxmlFindElement(Pathnode, SourcesNode,	/*Search inside the Sources node*/
 								"Path", NULL, NULL,	/*the path node*/
 								MXML_DESCEND);          /*Descending*/
 
-			}
+			} /*if we have no more Paths, the search will return null, and this loop wil end*/
 		}
 		else
 		{
