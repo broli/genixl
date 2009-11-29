@@ -191,6 +191,12 @@ menu_items_t printmenuSource(mxml_node_t *tree)
 			Pathnode = mxmlFindElement(SourcesNode,SourcesNode,	/*Search inside the Sources node*/
 							"Path", NULL, NULL,	/*the path node*/
 							MXML_DESCEND);          /*Descending*/
+			if ( Pathnode != NULL)
+			{
+				/*there is a Sources node, but no paths*/
+				printf("\t\t<n/a>\n");
+			}
+
 			while ( Pathnode != NULL )
 			{
 				node = mxmlWalkNext ( Pathnode, Pathnode, MXML_DESCEND); /*walk*/
@@ -240,12 +246,13 @@ menu_items_t printmenuSource(mxml_node_t *tree)
 								MXML_DESCEND);          /*Descending*/
 
 			} /*if we have no more Paths, the search will return null, and this loop wil end*/
-		}
+		} /*end of the sources procesing code*/
 		else
 		{
 			/*No sources node, print empty*/
-			printf("\n");
+			printf("\t\t<n/a>\n");
 		}
+
 
 	}
 	else
@@ -253,10 +260,10 @@ menu_items_t printmenuSource(mxml_node_t *tree)
 		/*No source node*/
 		/*print empty */
 		printf("1) Sources:\n"
-				"\t<Empty>\n"
-			"2) UserName: \n"
-			"3) Password: \n"
-			"4) CharSet: \n");
+				"\t\t<n/a>\n"
+			"2) UserName: <n/a>\n"
+			"3) Password: <n/a>\n"
+			"4) CharSet: <n/a>\n");
 	}
 	return MENU_SOURCE;
 }
