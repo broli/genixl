@@ -33,6 +33,7 @@ int main(int argc, char *argv[])
 {
 	char *CurLocale=NULL; /*var to hold the current locale*/
 	FILE *fp=NULL;
+	mxml_node_t *tree=NULL;
 
 	CurLocale = setlocale(LC_ALL, "");/* set the user's env locale*/
 	if ( CurLocale == NULL )

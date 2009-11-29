@@ -164,8 +164,8 @@ void printmenuMain(void)
 menu_items_t printmenuSource(mxml_node_t *tree)
 {
 	mxml_node_t *SourceNode=NULL;
-	mxml_node_t *SourcesNode=NULL
-	mxml_node_t *Pathnode=NULL
+	mxml_node_t *SourcesNode=NULL;
+	mxml_node_t *Pathnode=NULL;
 
 	
 	system("clear");
@@ -180,20 +180,20 @@ menu_items_t printmenuSource(mxml_node_t *tree)
 	{
 		/*search and handwalk */
 		printf("1) Sources:\n");
-		SourcesNode = mxmlFindElement(SourceNode,SourceNode	/*Search inside the Source node*/
-						"Sources", NULL, NULL	/*The Sources sub node */
+		SourcesNode = mxmlFindElement(SourceNode,SourceNode,	/*Search inside the Source node*/
+						"Sources", NULL, NULL,	/*The Sources sub node */
 						MXML_DESCEND);		/*Descending*/
 		if ( SourcesNode != NULL )
 		{
 			/*Got the sources node, search all the Paths inside*/
-			Pathnode = mxmlFindElement(SourcesNode,SourcesNode	/*Search inside the Sources node*/
-							"Path", NULL, NULL	/*the path node*/
+			Pathnode = mxmlFindElement(SourcesNode,SourcesNode,	/*Search inside the Sources node*/
+							"Path", NULL, NULL,	/*the path node*/
 							MXML_DESCEND);          /*Descending*/
 			while ( Pathnode != NULL )
 			{
 				printf("\t\t%s",Pathnode->value.element.name);
-				Pathnode = mxmlFindElement(Pathnode, SourcesNode	/*Search inside the Sources node*/
-								"Path", NULL, NULL	/*the path node*/
+				Pathnode = mxmlFindElement(Pathnode, SourcesNode,	/*Search inside the Sources node*/
+								"Path", NULL, NULL,	/*the path node*/
 								MXML_DESCEND);          /*Descending*/
 
 			}
