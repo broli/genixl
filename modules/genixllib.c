@@ -164,8 +164,10 @@ menu_items_t printmenuSource(mxml_node_t *tree)
 {
 	mxml_node_t *node=NULL; /*temporal node, used to walk*/
 	mxml_node_t *SourceNode=NULL; /*pointer to the Source node, topnode of this function*/
-	mxml_node_t *SourcesNode=NULL; /*pointer to the Sources node*/
-	mxml_node_t *Pathnode=NULL; /*pointer to a path node*/
+	mxml_node_t *SourcesNode=NULL;
+	mxml_node_t *Pathnode=NULL; 
+	mxml_node_t *UserName=NULL;
+
 
 	char *charPtr=NULL; /*pointer to hold strstr return value*/
 
@@ -182,6 +184,10 @@ menu_items_t printmenuSource(mxml_node_t *tree)
 	{
 		/*search and handwalk */
 		printf("1) Sources:\n");
+
+		/*First lets search the Sources, its a multi string option 
+		 * So we need to search, walk, and iterate, trough tree, with
+		 * the SourcesNode beeing the top node*/
 		SourcesNode = mxmlFindElement(SourceNode,SourceNode,	/*Search inside the Source node*/
 						"Sources", NULL, NULL,	/*The Sources sub node */
 						MXML_DESCEND);		/*Descending*/
@@ -194,6 +200,7 @@ menu_items_t printmenuSource(mxml_node_t *tree)
 			if ( Pathnode == NULL)
 			{
 				/*there is a Sources node, but no paths*/
+				/*if we are here the while 4 lines below is not gona execute*/
 				printf("\t\t<n/a>\n");
 			}
 
@@ -208,7 +215,7 @@ menu_items_t printmenuSource(mxml_node_t *tree)
 					if (charPtr == NULL )
 					{
 						/*no whitespace, so this is the data*/
-						printf("\t\t%s\n",node->value.opaque);
+						printf("\t%s\n",node->value.opaque);
 					}
 					else
 					{
@@ -220,7 +227,7 @@ menu_items_t printmenuSource(mxml_node_t *tree)
 							if (charPtr == NULL )
 							{
 								/*no whitespace, so this is the data*/
-								printf("\t\t%s\n",node->value.opaque);
+								printf("\t%s\n",node->value.opaque);
 							}
 						}
 						else
@@ -250,8 +257,24 @@ menu_items_t printmenuSource(mxml_node_t *tree)
 		else
 		{
 			/*No sources node, print empty*/
-			printf("\t\t<n/a>\n");
+			printf("\t<n/a>\n");
 		}
+
+		/*Now, lets search the User name*/
+		UserName = mxmlFindElement(SourceNode,SourceNode,	/*Search inside the Source node*/
+						"UserName", NULL, NULL,	/*The UserName sub node */
+						MXML_DESCEND);		/*Descending*/
+		if ( UserName != NULL && UserName->child != NULL)
+		{
+			/*found the user name, and it has a child*/
+			printf("2) UserName: %s\n",UserName->child->value.opaque);
+
+		}
+		else 
+		{
+			
+		}
+
 
 
 	}
