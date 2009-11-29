@@ -32,6 +32,7 @@
 int main(int argc, char *argv[])
 {
 	char *CurLocale=NULL; /*var to hold the current locale*/
+	FILE *fp=NULL;
 
 	CurLocale = setlocale(LC_ALL, "");/* set the user's env locale*/
 	if ( CurLocale == NULL )
@@ -44,9 +45,13 @@ int main(int argc, char *argv[])
 		/*the app was run with parameters*/
 	}
 
-	printmenu(MENU_MAIN,NULL);
+	fp = fopen(argv[1], "r");
+	tree = mxmlLoadFile(NULL, fp, MXML_OPAQUE_CALLBACK);
 
+	printmenu(MENU_MAIN,tree);
 
+	mxmlDelete(tree);
+	fclose(fp);
 	return EXIT_SUCCESS;
 }
 
