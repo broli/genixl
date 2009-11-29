@@ -54,7 +54,7 @@ menu_items_t printmenu(menu_items_t menu,mxml_node_t *tree)
 	else if ( menu == MENU_SOURCE )
 	{
 		rtrnMenu = printmenuSource(tree);
-		return MENU_SOURCE;
+		return rtrnMenu;
 	}
 	else if ( menu == MENU_DESTINATION )
 	{
