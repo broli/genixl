@@ -53,7 +53,7 @@ menu_items_t printmenu(menu_items_t menu,mxml_node_t *tree)
 	}
 	else if ( menu == MENU_SOURCE )
 	{
-		printmenuSource(tree);
+		rtrnMenu = printmenuSource(tree);
 		return MENU_SOURCE;
 	}
 	else if ( menu == MENU_DESTINATION )
@@ -258,5 +258,5 @@ menu_items_t printmenuSource(mxml_node_t *tree)
 			"3) Password: \n"
 			"4) CharSet: \n");
 	}
-
+	return MENU_SOURCE;
 }
