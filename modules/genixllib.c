@@ -302,6 +302,7 @@ menu_items_t printmenuSource(mxml_node_t *tree)
 menu_items_t printmenuDestination(mxml_node_t *tree)
 {
 	mxml_node_t *Destination=NULL;
+	mxml_node_t *Title=NULL;
 	mxml_node_t *HotSync=NULL;
 	mxml_node_t *ActiveSync=NULL;
 	mxml_node_t *Files=NULL;
@@ -311,13 +312,25 @@ menu_items_t printmenuDestination(mxml_node_t *tree)
 	printf("Destination\n------\n");
 
 	Destination = mxmlFindElement(tree, tree, 		/*Search from the top*/
-				"Destination", NULL, NULL, 		/*The Source element*/
+				"Destination", NULL, NULL, 	/*The Destination element*/
 				MXML_DESCEND); 			/*Descending*/
 
 	/*the search might return null*/
 	if ( Destination != NULL )
 	{
-		
+		/*the Destination node exists, i have a pointer to it*/
+		Title = mxmlFindElement(Destination,Destination,	/*Search inside the Destination node*/
+						"Title", NULL, NULL,	/*The Title sub node */
+						MXML_DESCEND);		/*Descending*/
+		if ( Title != NULL )
+		{
+
+		}
+		else
+		{
+			/*No title node*/
+			printf("1) Title: <n/a>\n\n");
+		}
 	}
 	else
 	{
