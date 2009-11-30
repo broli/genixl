@@ -49,6 +49,12 @@ int main(int argc, char *argv[])
 	}
 
 	fp = fopen(argv[1], "r");
+	if ( fp == NULL )
+	{
+		printf("cannot open file \"%s\"\n",argv[1]);
+		return EXIT_FAILURE;
+	}
+
 	tree = mxmlLoadFile(NULL, fp, MXML_OPAQUE_CALLBACK);
 
 	/*printmenu(MENU_MAIN,NULL);*/
