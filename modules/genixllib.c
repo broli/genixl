@@ -58,8 +58,8 @@ menu_items_t printmenu(menu_items_t menu,mxml_node_t *tree)
 	}
 	else if ( menu == MENU_DESTINATION )
 	{
-		/*TODO make destination menu*/
-		return MENU_DESTINATION;
+		rtrnMenu = printmenuDestination(tree);	
+		return rtrnMenu;
 	}
 	else if ( menu == MENU_LINK )
 	{
@@ -296,4 +296,40 @@ menu_items_t printmenuSource(mxml_node_t *tree)
 			"\n");
 	}
 	return MENU_SOURCE;
+}
+
+
+menu_items_t printmenuDestination(mxml_node_t *tree)
+{
+	mxml_node_t *Destination=NULL;
+	mxml_node_t *HotSync=NULL;
+	mxml_node_t *ActiveSync=NULL;
+	mxml_node_t *Files=NULL;
+
+
+	system("clear");
+	printf("Destination\n------\n");
+
+	Destination = mxmlFindElement(tree, tree, 		/*Search from the top*/
+				"Destination", NULL, NULL, 		/*The Source element*/
+				MXML_DESCEND); 			/*Descending*/
+
+	/*the search might return null*/
+	if ( Destination != NULL )
+	{
+		
+	}
+	else
+	{
+		/*No destination node, print empty*/
+		printf("1) Title: <n/a>\n\n"
+			"2) HotSync:\n"
+				"\t<n/a>\n\n"
+			"3) ActiveSync:\n"
+				"\t<n/a>\n\n"
+			"4) Files:\n"
+				"\t<n/a>\n\n");
+	}
+
+	return MENU_DESTINATION;
 }

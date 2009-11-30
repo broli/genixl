@@ -58,7 +58,8 @@ int main(int argc, char *argv[])
 	tree = mxmlLoadFile(NULL, fp, MXML_OPAQUE_CALLBACK);
 
 	/*printmenu(MENU_MAIN,NULL);*/
-	printmenu(MENU_SOURCE,tree);
+	/*printmenu(MENU_SOURCE,tree);*/
+	printmenu(MENU_DESTINATION,tree);
 
 	mxmlDelete(tree);
 	fclose(fp);
