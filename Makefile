@@ -28,7 +28,7 @@ clean :
 	rm bin/*
 
 ctags :
-	ctags -R --c-kinds=dfglmstv .
+	ctags -R --c-kinds=dfglmstve .
 
 #if anyone knows a better way, to add logic to the makefile so if this dirs dont exits, it creates, pls tell me how
 mkdir :
