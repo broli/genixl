@@ -162,16 +162,14 @@ void printmenuMain(void)
 
 menu_items_t printmenuSource(mxml_node_t *tree)
 {
-	mxml_node_t *node=NULL; /*temporal node, used to walk*/
 	mxml_node_t *SourceNode=NULL; /*pointer to the Source node, topnode of this function*/
 	mxml_node_t *SourcesNode=NULL;
 	mxml_node_t *Pathnode=NULL; 
 	mxml_node_t *UserName=NULL;
+	mxml_node_t *Password=NULL;
+	mxml_node_t *CharSet=NULL;
 
 
-	char *charPtr=NULL; /*pointer to hold strstr return value*/
-
-	
 	system("clear");
 	printf("Source\n------\n");
 
@@ -187,7 +185,8 @@ menu_items_t printmenuSource(mxml_node_t *tree)
 
 		/*First lets search the Sources, its a multi string option 
 		 * So we need to search, walk, and iterate, trough tree, with
-		 * the SourcesNode beeing the top node*/
+		 * the SourcesNode beeing the top node******************************************************************/
+
 		SourcesNode = mxmlFindElement(SourceNode,SourceNode,	/*Search inside the Source node*/
 						"Sources", NULL, NULL,	/*The Sources sub node */
 						MXML_DESCEND);		/*Descending*/
@@ -200,51 +199,21 @@ menu_items_t printmenuSource(mxml_node_t *tree)
 			if ( Pathnode == NULL)
 			{
 				/*there is a Sources node, but no paths*/
-				/*if we are here the while 4 lines below is not gona execute*/
-				printf("\t\t<n/a>\n");
+				/*this double chek is necesary, because the else part 
+				 * of this if has to be a loop with the same condition*/
+				printf("*\t<n/a>\n");
 			}
-
 			while ( Pathnode != NULL )
 			{
-				node = mxmlWalkNext ( Pathnode, Pathnode, MXML_DESCEND); /*walk*/
-				if ( node->type == MXML_OPAQUE )
+				if ( Pathnode->child != NULL && Pathnode->child->type == MXML_OPAQUE )
 				{
-					/*its opaque, so it might be the data, or white space*/
-					
-					charPtr = strstr( node->value.opaque,"\n"); /*search for new line*/
-					if (charPtr == NULL )
-					{
-						/*no whitespace, so this is the data*/
-						printf("\t%s\n",node->value.opaque);
-					}
-					else
-					{
-						/*whitespace, so this is not the node i need*/
-						node = mxmlWalkNext ( node,  Pathnode, MXML_DESCEND);
-						if ( node->type == MXML_OPAQUE )
-						{
-							charPtr = strstr( node->value.opaque,"\n"); /*search for new line*/
-							if (charPtr == NULL )
-							{
-								/*no whitespace, so this is the data*/
-								printf("\t%s\n",node->value.opaque);
-							}
-						}
-						else
-						{
-							/*if this is not opaque, we walked in the next path
-							 * dont print anythin, and dont do anything
-							 * the next iteration of the loop will search from the 
-							 * previus Path node and find this one */
-						}
-
-					}
+					/*it has a child, and its opaque*/
+					printf("*\t%s\n",Pathnode->child->value.opaque);
 				}
 				else
 				{
-					/*its not opaque, i dont know what to do*/
-					/*TODO analize this situation, if its posible, and
-					 * what to do when encountered*/
+					/*path with no data or data is not opaque*/
+					printf("*\t<n/a>\n");
 				}
 
 				/*advance Pathnode to the next path*/
@@ -257,36 +226,74 @@ menu_items_t printmenuSource(mxml_node_t *tree)
 		else
 		{
 			/*No sources node, print empty*/
-			printf("\t<n/a>\n");
+			printf("*\t<n/a>\n");
 		}
 
-		/*Now, lets search the User name*/
+		/*Now, lets search the User name************************************************************/
+
+		printf("\n"); /*make some room*/
+
 		UserName = mxmlFindElement(SourceNode,SourceNode,	/*Search inside the Source node*/
 						"UserName", NULL, NULL,	/*The UserName sub node */
 						MXML_DESCEND);		/*Descending*/
-		if ( UserName != NULL && UserName->child != NULL)
+		if ( UserName != NULL && UserName->child != NULL && UserName->child->type == MXML_OPAQUE)
 		{
-			/*found the user name, and it has a child*/
+			/*found the user name, and it has a child and its opaque*/
 			printf("2) UserName: %s\n",UserName->child->value.opaque);
-
 		}
 		else 
 		{
-			
+			/*found nothing, so n/a is displayed*/
+			printf("2) UserName: <n/a>\n");
 		}
 
+		/*Now, lets search the Password************************************************************/
 
+		printf("\n"); /*make some room*/
+		Password = mxmlFindElement(SourceNode,SourceNode,	/*Search inside the Source node*/
+						"Password", NULL, NULL,	/*The UserName sub node */
+						MXML_DESCEND);		/*Descending*/
+	
+		if ( Password != NULL && Password->child != NULL && Password->child->type == MXML_OPAQUE)
+		{
+			/*found the password, and it has a child*/
+			printf("2) Password: %s\n",Password->child->value.opaque);
+		}
+		else 
+		{
+			/*found nothing, so n/a is displayed*/
+			printf("2) Password: <n/a>\n");
+		}
 
+		/*Now, lets search the CharSet************************************************************/
+
+		printf("\n"); /*make some room*/
+		CharSet = mxmlFindElement(SourceNode,SourceNode,	/*Search inside the Source node*/
+						"CharSet", NULL, NULL,	/*The UserName sub node */
+						MXML_DESCEND);		/*Descending*/
+	
+		if ( CharSet != NULL && CharSet->child != NULL && CharSet->child->type == MXML_OPAQUE )
+		{
+			/*found the CharSet, and it has a child*/
+			printf("2) CharSet: %s\n",CharSet->child->value.opaque);
+		}
+		else 
+		{
+			/*found nothing, so n/a is displayed*/
+			printf("2) CharSet: <n/a>\n");
+		}
+		printf("\n");
 	}
 	else
 	{
 		/*No source node*/
 		/*print empty */
 		printf("1) Sources:\n"
-				"\t\t<n/a>\n"
-			"2) UserName: <n/a>\n"
-			"3) Password: <n/a>\n"
-			"4) CharSet: <n/a>\n");
+				"*\t<n/a>\n\n"
+			"2) UserName: <n/a>\n\n"
+			"3) Password: <n/a>\n\n"
+			"4) CharSet: <n/a>\n"
+			"\n");
 	}
 	return MENU_SOURCE;
 }
