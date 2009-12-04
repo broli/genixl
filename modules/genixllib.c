@@ -342,21 +342,24 @@ menu_items_t printmenuLinkOptions(mxml_node_t *tree)
 	/*the search might return null*/
 	if ( LinkOptions != NULL )
 	{
+		/*Print AltText*/
+		printf("1) AltText:");
 
 	}/*end of the LinkOptions procesing*/
 	else 
 	{
 		/*No LinkOptions node, print empty*/
-		printf("1) MaximumDepth: <n/a>\n\n"
-			"2) FollowOffsite: <n/a>\n\n"
-			"3) MaximumOffsiteDepth: <n/a>\n\n"
-			"4) SubDirOnly: <n/a>\n\n"
-			"5) UnresolvedDetail <n/a>\n\n"
-			"6) Exclude:\n"
+		printf("1) AltText: <n/a>\n\n"
+			"2) MaximumDepth: <n/a>\n\n"
+			"3) FollowOffsite: <n/a>\n\n"
+			"4) MaximumOffsiteDepth: <n/a>\n\n"
+			"5) SubDirOnly: <n/a>\n\n"
+			"6) UnresolvedDetail <n/a>\n\n"
+			"7) Exclude:\n"
 				"\t<n/a>\n\n"
-			"7) Include:\n"
+			"8) Include:\n"
 				"\t<n/a>\n\n"
-			"8) ExternalDocuments ->\n");
+			"9) ExternalDocuments ->(not implemented for now)\n\n");
 	}
 
 	return  MENU_LINK;
