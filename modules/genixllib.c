@@ -297,11 +297,20 @@ menu_items_t printmenuDestination(mxml_node_t *tree)
 		printf("2) HotSync:\n");
 		PrintPath(Destination,"HotSync");
 
-		/*Now, lets search the h ActiveSync ***************************************/
+		/*Now, lets search the ActiveSync ***************************************/
 		
 		printf("\n"); /*make it pretty*/
 		printf("3) ActiveSync:\n");
 		PrintPath(Destination,"ActiveSync");
+
+		/*Now, lets search the Files ***************************************/
+		
+		printf("\n"); /*make it pretty*/
+		printf("3) Files:\n");
+		PrintPath(Destination,"Files");
+
+		printf("\n"); /*make it pretty*/
+
 
 	}/*end of the Destination procesing*/
 	else 
