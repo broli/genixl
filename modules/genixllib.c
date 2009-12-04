@@ -70,8 +70,8 @@ menu_items_t printmenu(menu_items_t menu,mxml_node_t *tree)
 	}
 	else if ( menu == MENU_LINK )
 	{
-		/*TODO make link menu */
-		return MENU_LINK;
+		rtrnMenu = printmenuLinkOptions(tree);
+		return rtrnMenu;
 	}
 	else if ( menu == MENU_IMAGE )
 	{
@@ -326,4 +326,38 @@ menu_items_t printmenuDestination(mxml_node_t *tree)
 	}
 
 	return MENU_DESTINATION;
+}
+
+menu_items_t printmenuLinkOptions(mxml_node_t *tree)
+{
+	mxml_node_t *LinkOptions=NULL;
+
+	system("clear");
+	printf("Destination\n-----------\n\n");
+
+	LinkOptions = mxmlFindElement(tree, tree, 		/*Search from the top*/
+				"LinkOptions", NULL, NULL, 	/*The Destination element*/
+				MXML_DESCEND); 			/*Descending*/
+
+	/*the search might return null*/
+	if ( LinkOptions != NULL )
+	{
+
+	}/*end of the LinkOptions procesing*/
+	else 
+	{
+		/*No LinkOptions node, print empty*/
+		printf("1) MaximumDepth: <n/a>\n\n"
+			"2) FollowOffsite: <n/a>\n\n"
+			"3) MaximumOffsiteDepth: <n/a>\n\n"
+			"4) SubDirOnly: <n/a>\n\n"
+			"5) UnresolvedDetail <n/a>\n\n"
+			"6) Exclude:\n"
+				"\t<n/a>\n\n"
+			"7) Include:\n"
+				"\t<n/a>\n\n"
+			"8) ExternalDocuments: (submenu)\n");
+	}
+
+	return  MENU_LINK;
 }
