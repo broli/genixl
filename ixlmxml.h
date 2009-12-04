@@ -29,6 +29,8 @@ int initialize(mxml_node_t *tree);
 const char *whitespace_cb(mxml_node_t *node, int where);
 this dosnt need to be public*/
 
+/*Function te get the opaque value of the child node of an element*/
+char *getElemData(mxml_node_t *TopNode,char *Name);
 
 
 #endif /*IXLMXML_H_INCLUDED*/

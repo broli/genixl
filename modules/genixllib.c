@@ -14,9 +14,12 @@
  * along with genixl.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "../genixllib.h"
 #include <mxml.h>
 #include <stdlib.h>
+
+
+#include "../genixllib.h"
+#include "../ixlmxml.h"
 
 /*Main menu, no error cheking and no parameters, just print the main menu*/
 void printmenuMain(void);
@@ -39,6 +42,10 @@ menu_items_t printmenuMessages(mxml_node_t *tree);
 menu_items_t printmenuCookieOptions(mxml_node_t *tree);
 menu_items_t printmenuScheduling(mxml_node_t *tree);
 menu_items_t printmenuTargets(mxml_node_t *tree);
+
+
+/*function to print paths*/
+int PrintPath(mxml_node_t *TopNode,char *name);
 
 
 /*implementation of functions goes here*/
@@ -137,6 +144,64 @@ menu_items_t printmenu(menu_items_t menu,mxml_node_t *tree)
 	return MENU_ERROR;
 } /* menu_items_t printmenu(menu_items_t menu) */
 
+
+
+int PrintPath(mxml_node_t *TopNode,char *name)
+{
+	mxml_node_t *SearchedNode=NULL;
+	mxml_node_t *Pathnode=NULL;
+
+	/*This function searchs the given node, from the given top node
+	 * and prints all the subnodes called Path
+	 * (it assumes its a node with paths)*/
+	SearchedNode = mxmlFindElement(TopNode,TopNode,		/*Search inside the TopNode node*/
+					name, NULL, NULL,	/*The name sub node */
+					MXML_DESCEND);		/*Descending*/
+	if ( SearchedNode != NULL )
+	{
+		/*Got the SearchedNode node, search all the Paths inside*/
+		Pathnode = mxmlFindElement(SearchedNode,SearchedNode,	/*Search inside the SearchedNode node*/
+						"Path", NULL, NULL,	/*the path node*/
+						MXML_DESCEND);          /*Descending*/
+		if ( Pathnode == NULL)
+		{
+			/*there is a SearchedNode node, but no paths*/
+			/*this double chek is necesary, because the else part 
+			 * of this if has to be a loop with the same condition*/
+			printf("*\t<n/a>\n");
+		}
+		while ( Pathnode != NULL )
+		{
+			if ( Pathnode->child != NULL && Pathnode->child->type == MXML_OPAQUE )
+			{
+				/*it has a child, and its opaque*/
+				printf("*\t%s\n",Pathnode->child->value.opaque);
+			}
+			else
+			{
+				/*path with no data or data is not opaque*/
+				printf("*\t<n/a>\n");
+			}
+
+			/*advance Pathnode to the next path*/
+			Pathnode = mxmlFindElement(Pathnode, SearchedNode,	/*Search inside the Sources node*/
+							"Path", NULL, NULL,	/*the path node*/
+							MXML_DESCEND);          /*Descending*/
+
+		} /*if we have no more Paths, the search will return null, and this loop wil end*/
+	} /*end of the SearchedNode procesing code*/
+	else
+	{
+		/*No SearchedNode node, print empty*/
+		printf("*\t<n/a>\n");
+	}
+
+	return 0;
+}
+
+
+
+
 void printmenuMain(void)
 {
 	system("clear");
@@ -163,15 +228,9 @@ void printmenuMain(void)
 menu_items_t printmenuSource(mxml_node_t *tree)
 {
 	mxml_node_t *SourceNode=NULL; /*pointer to the Source node, topnode of this function*/
-	mxml_node_t *SourcesNode=NULL;
-	mxml_node_t *Pathnode=NULL; 
-	mxml_node_t *UserName=NULL;
-	mxml_node_t *Password=NULL;
-	mxml_node_t *CharSet=NULL;
-
 
 	system("clear");
-	printf("Source\n------\n");
+	printf("Source\n------\n\n");
 
 	SourceNode = mxmlFindElement(tree, tree, 		/*Search from the top*/
 				"Source", NULL, NULL, 		/*The Source element*/
@@ -182,107 +241,24 @@ menu_items_t printmenuSource(mxml_node_t *tree)
 	{
 		/*search and handwalk */
 		printf("1) Sources:\n");
+		/*print all the Paths in the sources node*/
+		PrintPath(SourceNode,"Sources");
 
-		/*First lets search the Sources, its a multi string option 
-		 * So we need to search, walk, and iterate, trough tree, with
-		 * the SourcesNode beeing the top node******************************************************************/
-
-		SourcesNode = mxmlFindElement(SourceNode,SourceNode,	/*Search inside the Source node*/
-						"Sources", NULL, NULL,	/*The Sources sub node */
-						MXML_DESCEND);		/*Descending*/
-		if ( SourcesNode != NULL )
-		{
-			/*Got the sources node, search all the Paths inside*/
-			Pathnode = mxmlFindElement(SourcesNode,SourcesNode,	/*Search inside the Sources node*/
-							"Path", NULL, NULL,	/*the path node*/
-							MXML_DESCEND);          /*Descending*/
-			if ( Pathnode == NULL)
-			{
-				/*there is a Sources node, but no paths*/
-				/*this double chek is necesary, because the else part 
-				 * of this if has to be a loop with the same condition*/
-				printf("*\t<n/a>\n");
-			}
-			while ( Pathnode != NULL )
-			{
-				if ( Pathnode->child != NULL && Pathnode->child->type == MXML_OPAQUE )
-				{
-					/*it has a child, and its opaque*/
-					printf("*\t%s\n",Pathnode->child->value.opaque);
-				}
-				else
-				{
-					/*path with no data or data is not opaque*/
-					printf("*\t<n/a>\n");
-				}
-
-				/*advance Pathnode to the next path*/
-				Pathnode = mxmlFindElement(Pathnode, SourcesNode,	/*Search inside the Sources node*/
-								"Path", NULL, NULL,	/*the path node*/
-								MXML_DESCEND);          /*Descending*/
-
-			} /*if we have no more Paths, the search will return null, and this loop wil end*/
-		} /*end of the sources procesing code*/
-		else
-		{
-			/*No sources node, print empty*/
-			printf("*\t<n/a>\n");
-		}
-
-		/*Now, lets search the User name************************************************************/
+		/*Now, lets search the User name********************************************/
 
 		printf("\n"); /*make some room*/
+		printf("2) UserName: %s\n",getElemData(SourceNode,"UserName") );
 
-		UserName = mxmlFindElement(SourceNode,SourceNode,	/*Search inside the Source node*/
-						"UserName", NULL, NULL,	/*The UserName sub node */
-						MXML_DESCEND);		/*Descending*/
-		if ( UserName != NULL && UserName->child != NULL && UserName->child->type == MXML_OPAQUE)
-		{
-			/*found the user name, and it has a child and its opaque*/
-			printf("2) UserName: %s\n",UserName->child->value.opaque);
-		}
-		else 
-		{
-			/*found nothing, so n/a is displayed*/
-			printf("2) UserName: <n/a>\n");
-		}
-
-		/*Now, lets search the Password************************************************************/
+		/*Now, lets search the Password*******************************************/
 
 		printf("\n"); /*make some room*/
-		Password = mxmlFindElement(SourceNode,SourceNode,	/*Search inside the Source node*/
-						"Password", NULL, NULL,	/*The UserName sub node */
-						MXML_DESCEND);		/*Descending*/
-	
-		if ( Password != NULL && Password->child != NULL && Password->child->type == MXML_OPAQUE)
-		{
-			/*found the password, and it has a child*/
-			printf("2) Password: %s\n",Password->child->value.opaque);
-		}
-		else 
-		{
-			/*found nothing, so n/a is displayed*/
-			printf("2) Password: <n/a>\n");
-		}
+		printf("3) Password: %s\n",getElemData(SourceNode,"Password") );
 
-		/*Now, lets search the CharSet************************************************************/
+		/*Now, lets search the CharSet********************************************/
 
 		printf("\n"); /*make some room*/
-		CharSet = mxmlFindElement(SourceNode,SourceNode,	/*Search inside the Source node*/
-						"CharSet", NULL, NULL,	/*The UserName sub node */
-						MXML_DESCEND);		/*Descending*/
-	
-		if ( CharSet != NULL && CharSet->child != NULL && CharSet->child->type == MXML_OPAQUE )
-		{
-			/*found the CharSet, and it has a child*/
-			printf("2) CharSet: %s\n",CharSet->child->value.opaque);
-		}
-		else 
-		{
-			/*found nothing, so n/a is displayed*/
-			printf("2) CharSet: <n/a>\n");
-		}
-		printf("\n");
+		printf("4) CharSet: %s\n\n",getElemData(SourceNode,"CharSet") );
+
 	}
 	else
 	{
@@ -302,14 +278,9 @@ menu_items_t printmenuSource(mxml_node_t *tree)
 menu_items_t printmenuDestination(mxml_node_t *tree)
 {
 	mxml_node_t *Destination=NULL;
-	mxml_node_t *Title=NULL;
-	mxml_node_t *HotSync=NULL;
-	mxml_node_t *ActiveSync=NULL;
-	mxml_node_t *Files=NULL;
-
 
 	system("clear");
-	printf("Destination\n------\n");
+	printf("Destination\n-----------\n\n");
 
 	Destination = mxmlFindElement(tree, tree, 		/*Search from the top*/
 				"Destination", NULL, NULL, 	/*The Destination element*/
@@ -318,21 +289,22 @@ menu_items_t printmenuDestination(mxml_node_t *tree)
 	/*the search might return null*/
 	if ( Destination != NULL )
 	{
-		/*the Destination node exists, i have a pointer to it*/
-		Title = mxmlFindElement(Destination,Destination,	/*Search inside the Destination node*/
-						"Title", NULL, NULL,	/*The Title sub node */
-						MXML_DESCEND);		/*Descending*/
-		if ( Title != NULL )
-		{
+		printf("1) Title: %s\n",getElemData(Destination,"Title") );
+		
+		/*Now, lets search the hotsync*********************************************/
+		
+		printf("\n"); /*make it pretty*/
+		printf("2) HotSync:\n");
+		PrintPath(Destination,"HotSync");
 
-		}
-		else
-		{
-			/*No title node*/
-			printf("1) Title: <n/a>\n\n");
-		}
-	}
-	else
+		/*Now, lets search the h ActiveSync ***************************************/
+		
+		printf("\n"); /*make it pretty*/
+		printf("3) ActiveSync:\n");
+		PrintPath(Destination,"ActiveSync");
+
+	}/*end of the Destination procesing*/
+	else 
 	{
 		/*No destination node, print empty*/
 		printf("1) Title: <n/a>\n\n"
