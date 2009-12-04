@@ -206,22 +206,22 @@ void printmenuMain(void)
 {
 	system("clear");
 	printf("Main\n----\n");
-	printf( "1)   Source\n"
-		"2)   Destination\n"
-		"3)   LinkOptions\n"
-		"4)   ImageOptions\n"
-		"5)   TableOptions\n"
-		"6)   ColorOptions\n"
-		"7)   MarginOptions\n"
-		"8)   SecurityOptions\n"
-		"9)   TextOptions\n"
-		"10)  DocumentOptions\n"
-		"11)  Bookmarks\n"
-		"12)  LastConversion\n"
-		"13)  Messages\n"
-		"14)  CookieOptions\n"
-		"15)  Scheduling\n"
-		"16)  Targets\n"
+	printf( "1)   Source->\n"
+		"2)   Destination->\n"
+		"3)   LinkOptions->\n"
+		"4)   ImageOptions->\n"
+		"5)   TableOptions->\n"
+		"6)   ColorOptions->\n"
+		"7)   MarginOptions->\n"
+		"8)   SecurityOptions->\n"
+		"9)   TextOptions->\n"
+		"10)  DocumentOptions->\n"
+		"11)  Bookmarks->\n"
+		"12)  LastConversion->\n"
+		"13)  Messages->\n"
+		"14)  CookieOptions->\n"
+		"15)  Scheduling->\n"
+		"16)  Targets->\n"
 		"17)  Exit\n\n");
 }
 
@@ -356,7 +356,7 @@ menu_items_t printmenuLinkOptions(mxml_node_t *tree)
 				"\t<n/a>\n\n"
 			"7) Include:\n"
 				"\t<n/a>\n\n"
-			"8) ExternalDocuments: (submenu)\n");
+			"8) ExternalDocuments ->\n");
 	}
 
 	return  MENU_LINK;
