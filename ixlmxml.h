@@ -31,6 +31,7 @@ this dosnt need to be public*/
 
 /*Function te get the opaque value of the child node of an element*/
 char *getElemData(mxml_node_t *TopNode,char *Name);
+char *getElemvalue(mxml_node_t *TopNode,char *Name);
 
 
 #endif /*IXLMXML_H_INCLUDED*/

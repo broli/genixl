@@ -36,3 +36,19 @@ char *getElemData(mxml_node_t *TopNode,char *Name)
 }
 
 
+char *getElemData(mxml_node_t *TopNode,char *Name)
+{
+	mxml_node_t *Element=NULL;
+
+        Element = mxmlFindElement(TopNode,TopNode,              /*Search inside the TopNode node*/
+                                   Name, NULL, NULL,            /*The "name" sub node */
+                                   MXML_DESCEND);               /*Descending*/
+
+        if ( Element != NULL && Element->value.element.num_attrs > 0)
+        {
+                /*found the Element , and it has a value*/
+                return mxmlElementGetAttr(Element, Name);
+        }
+
+	return "<n/a>"; /*default answer*/
+}
