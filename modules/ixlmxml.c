@@ -36,10 +36,10 @@ char *getElemData(mxml_node_t *TopNode,char *Name)
 }
 
 
-char *getElemData(mxml_node_t *TopNode,char *Name)
+const char *getElemValue(mxml_node_t *TopNode,char *Name)
 {
 	mxml_node_t *Element=NULL;
-
+	
         Element = mxmlFindElement(TopNode,TopNode,              /*Search inside the TopNode node*/
                                    Name, NULL, NULL,            /*The "name" sub node */
                                    MXML_DESCEND);               /*Descending*/
