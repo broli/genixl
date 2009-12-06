@@ -47,7 +47,7 @@ const char *getElemValue(mxml_node_t *TopNode,char *Name)
         if ( Element != NULL && Element->value.element.num_attrs > 0)
         {
                 /*found the Element , and it has a value*/
-                return mxmlElementGetAttr(Element, Name);
+                return mxmlElementGetAttr(Element, "value");
         }
 
 	return "<n/a>"; /*default answer*/

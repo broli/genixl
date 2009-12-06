@@ -342,24 +342,48 @@ menu_items_t printmenuLinkOptions(mxml_node_t *tree)
 	/*the search might return null*/
 	if ( LinkOptions != NULL )
 	{
-		/*Print AltText*/
-		printf("1) AltText:");
+		/*Print MaximumDepth*/
+		printf("1) MaximumDepth:\t%s\n",getElemValue(LinkOptions,"MaximumDepth"));
+
+		/*Print FollowOffsite*/
+		printf("\n"); /*make it pretty*/
+		printf("2) FollowOffsite:\t%s\n",getElemValue(LinkOptions,"FollowOffsite") );
+
+		/*Print MaximumOffsiteDepth*/
+		printf("\n"); /*make it pretty*/
+		printf("2) MaximumOffsiteDepth:\t%s\n",getElemValue(LinkOptions,"MaximumOffsiteDepth") );
+
+		/*Print SubDirOnly*/
+		printf("\n"); /*make it pretty*/
+		printf("2) SubDirOnly:\t\t%s\n",getElemValue(LinkOptions,"SubDirOnly") );
+
+		/*Print UnresolvedDetail*/
+		printf("\n"); /*make it pretty*/
+		printf("2) UnresolvedDetail:\t%s\n",getElemValue(LinkOptions,"UnresolvedDetail") );
+
+		/*Print Exclude*/
+		printf("\n"); /*make it pretty*/
+		printf("2) Exclude:\n");
+		PrintPath(Destination,"HotSync");
+
+
+
+
 
 	}/*end of the LinkOptions procesing*/
 	else 
 	{
 		/*No LinkOptions node, print empty*/
-		printf("1) AltText: <n/a>\n\n"
-			"2) MaximumDepth: <n/a>\n\n"
-			"3) FollowOffsite: <n/a>\n\n"
-			"4) MaximumOffsiteDepth: <n/a>\n\n"
-			"5) SubDirOnly: <n/a>\n\n"
-			"6) UnresolvedDetail <n/a>\n\n"
-			"7) Exclude:\n"
+		printf("1) MaximumDepth: \t<n/a>\n\n"
+			"2) FollowOffsite: \t<n/a>\n\n"
+			"3) MaximumOffsiteDepth: <n/a>\n\n"
+			"4) SubDirOnly: \t\t<n/a>\n\n"
+			"5) UnresolvedDetail \t<n/a>\n\n"
+			"6) Exclude:\n"
 				"\t<n/a>\n\n"
-			"8) Include:\n"
+			"7) Include:\n"
 				"\t<n/a>\n\n"
-			"9) ExternalDocuments ->(not implemented for now)\n\n");
+			"8) ExternalDocuments ->(not implemented for now)\n\n");
 	}
 
 	return  MENU_LINK;
