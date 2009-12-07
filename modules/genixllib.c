@@ -388,7 +388,7 @@ menu_items_t printmenuLinkOptions(mxml_node_t *tree)
 	mxml_node_t *LinkOptions=NULL;
 
 	system("clear");
-	printf("Destination\n-----------\n\n");
+	printf("LinkOptions\n-----------\n\n");
 
 	LinkOptions = mxmlFindElement(tree, tree, 		/*Search from the top*/
 				"LinkOptions", NULL, NULL, 	/*The Destination element*/
