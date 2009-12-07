@@ -47,6 +47,9 @@ menu_items_t printmenuTargets(mxml_node_t *tree);
 /*function to print paths*/
 int PrintPath(mxml_node_t *TopNode,char *name);
 
+/*function to print Patterns*/
+int PrintPattern(mxml_node_t *TopNode,char *name);
+
 
 /*implementation of functions goes here*/
 menu_items_t printmenu(menu_items_t menu,mxml_node_t *tree)
@@ -199,7 +202,59 @@ int PrintPath(mxml_node_t *TopNode,char *name)
 	return 0;
 }
 
+int PrintPattern(mxml_node_t *TopNode,char *name)
+{
+	/* TODO: rename variables in this function to match what it does*/
+	mxml_node_t *SearchedNode=NULL;
+	mxml_node_t *Pathnode=NULL;
 
+	/*This function searchs the given node, from the given top node
+	 * and prints all the subnodes called Path
+	 * (it assumes its a node with paths)*/
+	SearchedNode = mxmlFindElement(TopNode,TopNode,		/*Search inside the TopNode node*/
+					name, NULL, NULL,	/*The name sub node */
+					MXML_DESCEND);		/*Descending*/
+	if ( SearchedNode != NULL )
+	{
+		/*Got the SearchedNode node, search all the Paths inside*/
+		Pathnode = mxmlFindElement(SearchedNode,SearchedNode,	/*Search inside the SearchedNode node*/
+						"Pattern", NULL, NULL,	/*the path node*/
+						MXML_DESCEND);          /*Descending*/
+		if ( Pathnode == NULL)
+		{
+			/*there is a SearchedNode node, but no paths*/
+			/*this double chek is necesary, because the else part 
+			 * of this if has to be a loop with the same condition*/
+			printf("*\t<n/a>\n");
+		}
+		while ( Pathnode != NULL )
+		{
+			if ( Pathnode->child != NULL && Pathnode->child->type == MXML_OPAQUE )
+			{
+				/*it has a child, and its opaque*/
+				printf("*\t%s\n",Pathnode->child->value.opaque);
+			}
+			else
+			{
+				/*path with no data or data is not opaque*/
+				printf("*\t<n/a>\n");
+			}
+
+			/*advance Pathnode to the next path*/
+			Pathnode = mxmlFindElement(Pathnode, SearchedNode,	/*Search inside the Sources node*/
+							"Pattern", NULL, NULL,	/*the path node*/
+							MXML_DESCEND);          /*Descending*/
+
+		} /*if we have no more Paths, the search will return null, and this loop wil end*/
+	} /*end of the SearchedNode procesing code*/
+	else
+	{
+		/*No SearchedNode node, print empty*/
+		printf("*\t<n/a>\n");
+	}
+
+	return 0;
+}
 
 
 void printmenuMain(void)
@@ -364,9 +419,16 @@ menu_items_t printmenuLinkOptions(mxml_node_t *tree)
 		/*Print Exclude*/
 		printf("\n"); /*make it pretty*/
 		printf("2) Exclude:\n");
-		PrintPath(Destination,"HotSync");
+		PrintPattern(LinkOptions,"Exclude");
 
+		/*Print include*/
+		printf("\n"); /*make it pretty*/
+		printf("2) Include:\n");
+		PrintPattern(LinkOptions,"Include");
 
+		/*Print External Docuemnts*/
+		printf("\n"); /*make it pretty*/
+		printf("8) ExternalDocuments ->(not implemented for now)\n\n");
 
 
 
