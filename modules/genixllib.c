@@ -453,6 +453,7 @@ menu_items_t printmenuLinkOptions(mxml_node_t *tree)
 
 menu_items_t printmenuImageOptions(mxml_node_t *tree)
 {
-	
+
+	return MENU_IMAGE;
 }
 
