@@ -78,8 +78,8 @@ menu_items_t printmenu(menu_items_t menu,mxml_node_t *tree)
 	}
 	else if ( menu == MENU_IMAGE )
 	{
-		/*TODO make image menu*/
-		return MENU_IMAGE;
+		rtrnMenu = printmenuImageOptions(tree);
+		return rtrnMenu;
 	}
 	else if ( menu == MENU_COLOR )
 	{
@@ -450,3 +450,9 @@ menu_items_t printmenuLinkOptions(mxml_node_t *tree)
 
 	return  MENU_LINK;
 }
+
+menu_items_t printmenuImageOptions(mxml_node_t *tree)
+{
+	
+}
+
