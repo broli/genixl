@@ -26,6 +26,7 @@ void printmenuMain(void);
 /*these do have return code, because the mxml can fail
  * the only parameter needed is the tree,
  * so it can show the current setting*/
+/* TODO re-think this error cheking thing. dosnt hold much water now*/
 menu_items_t printmenuSource(mxml_node_t *tree);
 menu_items_t printmenuDestination(mxml_node_t *tree);
 menu_items_t printmenuLinkOptions(mxml_node_t *tree);
