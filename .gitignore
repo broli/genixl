@@ -1,0 +1,9 @@
+obj/
+bin/
+salida
+test.xml
+*.swp
+tags
+*.bak
+test2.xml
+test3.xml
