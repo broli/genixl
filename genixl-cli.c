@@ -62,7 +62,9 @@ int main(int argc, char *argv[])
 	/*printmenu(MENU_DESTINATION,tree);*/
 	/*printmenu(MENU_LINK,tree);*/
 	printmenu(MENU_IMAGE,tree);
-	
+
+
+
 
 	mxmlDelete(tree);
 	fclose(fp);
