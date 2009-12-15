@@ -1,8 +1,0 @@
-you need to have a compiler, and the standard c libraries
-also need to have the includes of mini-xml http://www.minixml.org
-then, standing in the folder,
-make mkdir
-make
-
-if in doubt, drop me a line at carlos.ferrabone {at) gmail [dot} com
-or in the github web page https://github.com/broli/genixl/
