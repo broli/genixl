@@ -454,7 +454,72 @@ menu_items_t printmenuLinkOptions(mxml_node_t *tree)
 
 menu_items_t printmenuImageOptions(mxml_node_t *tree)
 {
+	mxml_node_t *ImageOptions=NULL;
+	system("clear");
+	printf("ImageOptions\n-----------\n\n");
+
+	ImageOptions = mxmlFindElement(tree, tree,               /*Search from the top*/
+				"ImageOptions", NULL, NULL,      /*The Destination element*/
+				MXML_DESCEND);                  /*Descending*/
+
+	/*the search might return null*/
+	if ( ImageOptions != NULL )
+	{
+        	/*Print AltText*/
+		printf("\n"); /*make it pretty*/
+		printf("2) AltText:\t%s\n",getElemValue(ImageOptions,"AltText") );
+
+		/*Print AltText*/
+		printf("\n"); /*make it pretty*/
+		printf("2) AltText:\t%s\n",getElemValue(ImageOptions,"AltText") );
+
+
+	}
+	/*end of the ImageOptions procesing*/
+        else 
+        {
+                /*No ImageOptions node, print empty*/
+                printf("1) ."
+                        "."
+                        "."
+                        "."
+                        ".\n\n");
+        }
 
 	return MENU_IMAGE;
 }
 
+/*
+menu_items_t printmenuLinkOptions(mxml_node_t *tree)
+{
+	mxml_node_t *LinkOptions=NULL;
+
+	system("clear");
+	printf("LinkOptions\n-----------\n\n");
+
+	LinkOptions = mxmlFindElement(tree, tree, 		*Search from the top*
+				"LinkOptions", NULL, NULL, 	*The Destination element*
+				MXML_DESCEND); 			*Descending*
+
+	*the search might return null*
+	if ( LinkOptions != NULL )
+	{
+		*Print MaximumDepth*
+		.
+		.
+		.
+		.
+
+	}*end of the LinkOptions procesing*
+	else 
+	{
+		*No LinkOptions node, print empty*
+		printf("1) .
+			.
+			.
+			.
+			.\n\n");
+	}
+
+	return  MENU_LINK;
+} */

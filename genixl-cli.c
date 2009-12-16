@@ -64,7 +64,7 @@ int main(int argc, char *argv[])
 	printmenu(MENU_IMAGE,tree);
 
 
-
+/*git config push.default current*/
 
 	mxmlDelete(tree);
 	fclose(fp);
