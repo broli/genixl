@@ -82,6 +82,12 @@ menu_items_t printmenu(menu_items_t menu,mxml_node_t *tree)
 		rtrnMenu = printmenuImageOptions(tree);
 		return rtrnMenu;
 	}
+	else if ( menu == MENU_TABLE )
+	{
+		rtrnMenu = printmenuTableOptions(tree);	
+		return rtrnMenu;
+	}
+
 	else if ( menu == MENU_COLOR )
 	{
 		/*TODO make color menu*/
@@ -552,6 +558,45 @@ menu_items_t printmenuImageOptions(mxml_node_t *tree)
 	return MENU_IMAGE;
 }
 
+
+menu_items_t printmenuTableOptions(mxml_node_t *tree)
+{
+	mxml_node_t *TableOptions=NULL;
+
+	system("clear");
+	printf("TableOptions\n-----------\n\n");
+
+	TableOptions = mxmlFindElement(tree, tree, 		/*Search from the top*/
+				"TableOptions", NULL, NULL, 	/*The Table element*/
+				MXML_DESCEND); 			/*Descending*/
+
+	/*the search might return null*/
+	if ( TableOptions != NULL )
+	{
+		/*Print MaximumDepth*
+		.
+		.
+		.
+		.*/
+
+	}/*end of the TableOptions procesing*/
+	else 
+	{
+		/*No TableOptions node, print empty*/
+		printf("1) IgnoreTables: \t\t<n/a>\n\n"
+			"2) AddSeparators: \t\t<n/a>\n\n"
+			"3) UseMinimumDepth: \t\t<n/a>\n\n"
+			"4) MinimumDepth: \t\t<n/a>\n\n"
+			"5) UseMaximumBottomReach: \t<n/a>\n\n"
+			"6) MaximumBottomReach: \t\t<n/a>\n\n"
+			"7) UnfoldFullPageTables: \t<n/a>\n\n"
+			"8) IgnorePixelWidths: \t\t<n/a>\n\n"
+			"\n\n");
+	}
+
+
+	return MENU_TABLE;
+}
 /*
 menu_items_t printmenuLinkOptions(mxml_node_t *tree)
 {
