@@ -573,11 +573,41 @@ menu_items_t printmenuTableOptions(mxml_node_t *tree)
 	/*the search might return null*/
 	if ( TableOptions != NULL )
 	{
-		/*Print MaximumDepth*
-		.
-		.
-		.
-		.*/
+
+		/*Print IgnoreTables*/
+		printf("\n"); /*make it pretty*/
+		printf("1) IgnoreTables:\t\t%s\n",getElemValue(TableOptions,"IgnoreTables") );
+
+		/*Print AddSeparators*/
+		printf("\n"); /*make it pretty*/
+		printf("2) AddSeparators:\t\t%s\n",getElemValue(TableOptions,"AddSeparators") );
+
+		/*Print UseMinimumDepth*/
+		printf("\n"); /*make it pretty*/
+		printf("3) UseMinimumDepth:\t\t%s\n",getElemValue(TableOptions,"UseMinimumDepth") );
+
+		/*Print MinimumDepth*/
+		printf("\n"); /*make it pretty*/
+		printf("4) MinimumDepth:\t\t%s\n",getElemValue(TableOptions,"MinimumDepth") );
+
+		/*Print UseMaximumBottomReach*/
+		printf("\n"); /*make it pretty*/
+		printf("5) UseMaximumBottomReach:\t%s\n",getElemValue(TableOptions,"UseMaximumBottomReach") );
+
+		/*Print MaximumBottomReach*/
+		printf("\n"); /*make it pretty*/
+		printf("6) MaximumBottomReach:\t\t%s\n",getElemValue(TableOptions,"MaximumBottomReach") );
+
+		/*Print UnfoldFullPageTables*/
+		printf("\n"); /*make it pretty*/
+		printf("7) UnfoldFullPageTables:\t%s\n",getElemValue(TableOptions,"UnfoldFullPageTables") );
+
+		/*Print IgnorePixelWidths*/
+		printf("\n"); /*make it pretty*/
+		printf("8) IgnorePixelWidths:\t\t%s\n",getElemValue(TableOptions,"IgnorePixelWidths") );
+
+
+		printf("\n\n");
 
 	}/*end of the TableOptions procesing*/
 	else 
