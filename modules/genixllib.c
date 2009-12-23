@@ -459,7 +459,7 @@ menu_items_t printmenuImageOptions(mxml_node_t *tree)
 	printf("ImageOptions\n-----------\n\n");
 
 	ImageOptions = mxmlFindElement(tree, tree,               /*Search from the top*/
-				"ImageOptions", NULL, NULL,      /*The Destination element*/
+				"ImageOptions", NULL, NULL,      /*The Image element*/
 				MXML_DESCEND);                  /*Descending*/
 
 	/*the search might return null*/
@@ -479,11 +479,22 @@ menu_items_t printmenuImageOptions(mxml_node_t *tree)
         else 
         {
                 /*No ImageOptions node, print empty*/
-                printf("1) ."
-                        "."
-                        "."
-                        "."
-                        ".\n\n");
+                printf("01) AltText: \t\t<n/a>\n\n"
+                        "02) Images: \t\t<n/a>\n\n"
+                        "03) ResizeLargeImages: \t<n/a>\n\n"
+                        "04) MaximumWidth: \t<n/a>\n\n"
+			"05) MaximumHeight: \t<n/a>\n\n"
+			"06) ImproveContrast: \t<n/a>\n\n"
+			"07) Dither: \t\t<n/a>\n\n"
+			"08) Compress: \t\t<n/a>\n\n"
+			"09) LossyLevel: \t<n/a>\n\n"
+			"10) LossyQuality: \t<n/a>\n\n"
+			"11) BitDepth1: \t\t<n/a>\n\n"
+			"12) BitDepth2: \t\t<n/a>\n\n"
+			"13) BitDepth4: \t\t<n/a>\n\n"
+			"14) BitDepth8: \t\t<n/a>\n\n"
+			"15) BitDepth16: \t<n/a>\n\n"
+                        "\n\n");
         }
 
 	return MENU_IMAGE;
