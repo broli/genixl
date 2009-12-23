@@ -90,8 +90,8 @@ menu_items_t printmenu(menu_items_t menu,mxml_node_t *tree)
 
 	else if ( menu == MENU_COLOR )
 	{
-		/*TODO make color menu*/
-		return MENU_COLOR;
+		rtrnMenu = printmenuColorOptions(tree);
+		return rtrnMenu;
 	}
 	else if ( menu == MENU_MARGIN )
 	{
@@ -626,6 +626,43 @@ menu_items_t printmenuTableOptions(mxml_node_t *tree)
 
 
 	return MENU_TABLE;
+}
+
+menu_items_t printmenuColorOptions(mxml_node_t *tree)
+{
+	mxml_node_t *ColorOptions=NULL;
+
+	system("clear");
+	printf("ColorOptions\n-----------\n\n");
+
+	ColorOptions = mxmlFindElement(tree, tree, 		/*Search from the top*/
+				"ColorOptions", NULL, NULL, 	/*The Destination element*/
+				MXML_DESCEND); 			/*Descending*/
+
+	/*the search might return null*/
+	if ( ColorOptions != NULL )
+	{
+	
+		/*Print BackgroundColors*/
+		/*printf("\n"); *make it pretty*/
+		printf("1) BackgroundColors:\t%s\n",getElemValue(ColorOptions,"BackgroundColors") );
+	
+		/*Print TextColors*/
+		printf("\n"); /*make it pretty*/
+		printf("2) TextColors:\t\t%s\n",getElemValue(ColorOptions,"TextColors") );
+
+		printf("\n\n");
+
+	}/*end of the ColorOptions procesing*/
+	else 
+	{
+		/*No ColorOptions node, print empty*/
+		printf("1) BackgroundColors: \t<n/a>\n\n"
+			"2) TextColors: \t\t<n/a>\n\n"
+			"\n\n");
+	}
+
+	return MENU_COLOR;
 }
 /*
 menu_items_t printmenuLinkOptions(mxml_node_t *tree)
