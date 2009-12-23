@@ -467,13 +467,65 @@ menu_items_t printmenuImageOptions(mxml_node_t *tree)
 	{
         	/*Print AltText*/
 		printf("\n"); /*make it pretty*/
-		printf("2) AltText:\t%s\n",getElemValue(ImageOptions,"AltText") );
+		printf("01) AltText:\t\t%s\n",getElemValue(ImageOptions,"AltText") );
 
-		/*Print AltText*/
+		/*Print Images*/
 		printf("\n"); /*make it pretty*/
-		printf("2) AltText:\t%s\n",getElemValue(ImageOptions,"AltText") );
+		printf("02) Images:\t\t%s\n",getElemValue(ImageOptions,"Images") );
 
+		/*Print ResizeLargeImages*/
+		printf("\n"); /*make it pretty*/
+		printf("03) ResizeLargeImages:\t%s\n",getElemValue(ImageOptions,"ResizeLargeImages") );
 
+		/*Print MaximumWidth*/
+		printf("\n"); /*make it pretty*/
+		printf("04) MaximumWidth:\t%s\n",getElemValue(ImageOptions,"MaximumWidth") );
+
+		/*Print MaximumHeight*/
+		printf("\n"); /*make it pretty*/
+		printf("05) MaximumHeight:\t%s\n",getElemValue(ImageOptions,"MaximumHeight") );
+
+		/*Print ImproveContrast*/
+		printf("\n"); /*make it pretty*/
+		printf("06) ImproveContrast:\t%s\n",getElemValue(ImageOptions,"ImproveContrast") );
+
+		/*Print Dither*/
+		printf("\n"); /*make it pretty*/
+		printf("07) Dither:\t\t%s\n",getElemValue(ImageOptions,"Dither") );
+
+		/*Print Compress*/
+		printf("\n"); /*make it pretty*/
+		printf("08) Compress:\t\t%s\n",getElemValue(ImageOptions,"Compress") );
+
+		/*Print LossyLevel*/
+		printf("\n"); /*make it pretty*/
+		printf("09) LossyLevel:\t\t%s\n",getElemValue(ImageOptions,"LossyLevel") );
+
+		/*Print LossyQuality*/
+		printf("\n"); /*make it pretty*/
+		printf("10) LossyQuality:\t%s\n",getElemValue(ImageOptions,"LossyQuality") );
+
+		/*Print BitDepth1*/
+		printf("\n"); /*make it pretty*/
+		printf("11) BitDepth1:\t\t%s\n",getElemValue(ImageOptions,"BitDepth1") );
+
+		/*Print BitDepth2*/
+		printf("\n"); /*make it pretty*/
+		printf("12) BitDepth2:\t\t%s\n",getElemValue(ImageOptions,"BitDepth2") );
+
+		/*Print BitDepth4*/
+		printf("\n"); /*make it pretty*/
+		printf("13) BitDepth4:\t\t%s\n",getElemValue(ImageOptions,"BitDepth4") );
+
+		/*Print BitDepth8*/
+		printf("\n"); /*make it pretty*/
+		printf("14) BitDepth8:\t\t%s\n",getElemValue(ImageOptions,"BitDepth8") );
+
+		/*Print BitDepth16*/
+		printf("\n"); /*make it pretty*/
+		printf("15) BitDepth16:\t\t%s\n",getElemValue(ImageOptions,"BitDepth16") );
+
+		printf("\n\n");
 	}
 	/*end of the ImageOptions procesing*/
         else 
