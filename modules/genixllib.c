@@ -100,8 +100,8 @@ menu_items_t printmenu(menu_items_t menu,mxml_node_t *tree)
 	}
 	else if ( menu == MENU_SECURITY )
 	{
-		/*TODO make security menu*/
-		return MENU_SECURITY;
+		rtrnMenu = printmenuSecurityOptions(tree);
+		return rtrnMenu; 
 	}
 	else if ( menu == MENU_TEXT )
 	{
@@ -700,6 +700,41 @@ menu_items_t printmenuMarginOptions(mxml_node_t *tree)
 	}
 	
 	return MENU_MARGIN;
+}
+
+
+menu_items_t printmenuSecurityOptions(mxml_node_t *tree)
+{
+	mxml_node_t *SecurityOptions=NULL;
+
+	system("clear");
+	printf("SecurityOptions\n-----------\n\n");
+
+	SecurityOptions = mxmlFindElement(tree, tree, 		/*Search from the top*/
+				"SecurityOptions", NULL, NULL, 	/*The Destination element*/
+				MXML_DESCEND); 			/*Descending*/
+
+	/*the search might return null*/
+	if ( SecurityOptions != NULL )
+	{
+
+		/*Print LeftRightMargins*/
+		/*printf("\n"); *make it pretty*/
+		printf("1) Convert:\t%s\n",getElemValue(SecurityOptions,"Convert") );
+
+	
+	} /*end of the SecurityOptions procesing*/
+	else 
+	{
+		/*No SecurityOptions node, print empty*
+		printf("1) .
+			.
+			.
+			.
+			.\n\n");*/
+	}
+
+	return MENU_SECURITY;
 }
 
 /*
