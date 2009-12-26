@@ -95,8 +95,8 @@ menu_items_t printmenu(menu_items_t menu,mxml_node_t *tree)
 	}
 	else if ( menu == MENU_MARGIN )
 	{
-		/*TODO make margin menu*/
-		return MENU_MARGIN;
+		rtrnMenu = printmenuMarginOptions(tree);
+		return rtrnMenu;
 	}
 	else if ( menu == MENU_SECURITY )
 	{
@@ -664,6 +664,44 @@ menu_items_t printmenuColorOptions(mxml_node_t *tree)
 
 	return MENU_COLOR;
 }
+
+menu_items_t printmenuMarginOptions(mxml_node_t *tree)
+{
+	mxml_node_t *MarginOptions=NULL;
+
+	system("clear");
+	printf("MarginOptions\n-----------\n\n");
+
+	MarginOptions = mxmlFindElement(tree, tree, 		/*Search from the top*/
+				"MarginOptions", NULL, NULL, 	/*The Destination element*/
+				MXML_DESCEND); 			/*Descending*/
+
+	/*the search might return null*/
+	if ( MarginOptions != NULL )
+	{
+	
+		/*Print LeftRightMargins*/
+		/*printf("\n"); *make it pretty*/
+		printf("1) LeftRightMargins:\t%s\n",getElemValue(MarginOptions,"LeftRightMargins") );
+	
+		/*Print LeftRightPadding*/
+		printf("\n"); /*make it pretty*/
+		printf("2) LeftRightPadding:\t%s\n",getElemValue(MarginOptions,"LeftRightPadding") );
+
+		printf("\n\n");
+
+	}/*end of the MarginOptions procesing*/
+	else 
+	{
+		/*No MarginOptions node, print empty*/
+		printf("1) LeftRightMargins: \t<n/a>\n\n"
+			"2) LeftRightPadding:\t<n/a>\n\n"
+			"\n\n");
+	}
+	
+	return MENU_MARGIN;
+}
+
 /*
 menu_items_t printmenuLinkOptions(mxml_node_t *tree)
 {
