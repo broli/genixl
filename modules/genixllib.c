@@ -737,26 +737,29 @@ menu_items_t printmenuSecurityOptions(mxml_node_t *tree)
 		/*Print Print*/
 		printf("\n"); /*make it pretty*/
 		printf("5) Print:\t\t%s\n",getElemValue(SecurityOptions,"Print") );
-
+		
+		/*Print sub node Expiration*/
+		printf("\nExpiration: \n");
+		/*TODO finish this function*/
 	
 	} /*end of the SecurityOptions procesing*/
 	else 
 	{
 		/*No SecurityOptions node, print empty*/
-		printf("1) Convert:\t\t<n/a>\n"
-			"2) CopyBeam:\t\t<n/a>\n"
-			"3) CopyAndPaste:\t<n/a>\n"
-			"4) Modify:\t\t<n/a>\n"
-			"5) Print:\t\t<n/a>\n"
+		printf("01) Convert:\t\t<n/a>\n"
+			"02) CopyBeam:\t\t<n/a>\n"
+			"03) CopyAndPaste:\t<n/a>\n"
+			"04) Modify:\t\t<n/a>\n"
+			"05) Print:\t\t<n/a>\n"
 			"\nExpiration: \n"
-			"\t Expires:\t\t<n/a>\n"
-			"\t Date:\t\t\t<n/a>\n"
+			"\t 06) Expires:\t\t<n/a>\n"
+			"\t 07) Date:\t\t\t<n/a>\n"
 			"\nPassword:\n"
-			"\t Require:\t\t<n/a>\n"
-			"\t Password:\t\t<n/a>\n"
+			"\t 08) Require:\t\t<n/a>\n"
+			"\t 09) Password:\t\t<n/a>\n"
 			"\nRegistrationCode:\n"
-			"\t Require:\t\t<n/a>\n"
-			"\t DocumentID:\t\t<n/a>\n"
+			"\t 10) Require:\t\t<n/a>\n"
+			"\t 11) DocumentID:\t\t<n/a>\n"
 			"\n\n");
 
 	}
