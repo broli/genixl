@@ -64,7 +64,8 @@ int main(int argc, char *argv[])
 	/*printmenu(MENU_IMAGE,tree);*/
 	/*printmenu(MENU_TABLE,tree);*/
 	/*printmenu(MENU_COLOR,tree);*/
-	printmenu(MENU_MARGIN,tree);
+	/*printmenu(MENU_MARGIN,tree);*/
+	printmenu(MENU_SECURITY,tree);
 
 
 /*git config push.default current*/

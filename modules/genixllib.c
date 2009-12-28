@@ -720,18 +720,45 @@ menu_items_t printmenuSecurityOptions(mxml_node_t *tree)
 
 		/*Print LeftRightMargins*/
 		/*printf("\n"); *make it pretty*/
-		printf("1) Convert:\t%s\n",getElemValue(SecurityOptions,"Convert") );
+		printf("1) Convert:\t\t%s\n",getElemValue(SecurityOptions,"Convert") );
+
+		/*Print CopyBeam*/
+		printf("\n"); /*make it pretty*/
+		printf("2) CopyBeam:\t\t%s\n",getElemValue(SecurityOptions,"CopyBeam") );
+
+		/*Print CopyAndPaste*/
+		printf("\n"); /*make it pretty*/
+		printf("3) CopyAndPaste:\t%s\n",getElemValue(SecurityOptions,"CopyAndPaste") );
+
+		/*Print Modify*/
+		printf("\n"); /*make it pretty*/
+		printf("4) Modify:\t\t%s\n",getElemValue(SecurityOptions,"Modify") );
+
+		/*Print Print*/
+		printf("\n"); /*make it pretty*/
+		printf("5) Print:\t\t%s\n",getElemValue(SecurityOptions,"Print") );
 
 	
 	} /*end of the SecurityOptions procesing*/
 	else 
 	{
-		/*No SecurityOptions node, print empty*
-		printf("1) .
-			.
-			.
-			.
-			.\n\n");*/
+		/*No SecurityOptions node, print empty*/
+		printf("1) Convert:\t\t<n/a>\n"
+			"2) CopyBeam:\t\t<n/a>\n"
+			"3) CopyAndPaste:\t<n/a>\n"
+			"4) Modify:\t\t<n/a>\n"
+			"5) Print:\t\t<n/a>\n"
+			"\nExpiration: \n"
+			"\t Expires:\t\t<n/a>\n"
+			"\t Date:\t\t\t<n/a>\n"
+			"\nPassword:\n"
+			"\t Require:\t\t<n/a>\n"
+			"\t Password:\t\t<n/a>\n"
+			"\nRegistrationCode:\n"
+			"\t Require:\t\t<n/a>\n"
+			"\t DocumentID:\t\t<n/a>\n"
+			"\n\n");
+
 	}
 
 	return MENU_SECURITY;
