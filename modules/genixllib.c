@@ -706,6 +706,9 @@ menu_items_t printmenuMarginOptions(mxml_node_t *tree)
 menu_items_t printmenuSecurityOptions(mxml_node_t *tree)
 {
 	mxml_node_t *SecurityOptions=NULL;
+	mxml_node_t *SecExpirationOptions=NULL;
+	mxml_node_t *SecPasswordOptions=NULL;
+	mxml_node_t *SecRegistrationCodeOptions=NULL;
 
 	system("clear");
 	printf("SecurityOptions\n-----------\n\n");
@@ -741,6 +744,7 @@ menu_items_t printmenuSecurityOptions(mxml_node_t *tree)
 		/*Print sub node Expiration*/
 		printf("\nExpiration: \n");
 		/*TODO finish this function*/
+
 	
 	} /*end of the SecurityOptions procesing*/
 	else 
