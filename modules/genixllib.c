@@ -398,7 +398,7 @@ menu_items_t printmenuLinkOptions(mxml_node_t *tree)
 	printf("LinkOptions\n-----------\n\n");
 
 	LinkOptions = mxmlFindElement(tree, tree, 		/*Search from the top*/
-				"LinkOptions", NULL, NULL, 	/*The Destination element*/
+				"LinkOptions", NULL, NULL, 	/*The LinkOptions element*/
 				MXML_DESCEND); 			/*Descending*/
 
 	/*the search might return null*/
@@ -636,7 +636,7 @@ menu_items_t printmenuColorOptions(mxml_node_t *tree)
 	printf("ColorOptions\n-----------\n\n");
 
 	ColorOptions = mxmlFindElement(tree, tree, 		/*Search from the top*/
-				"ColorOptions", NULL, NULL, 	/*The Destination element*/
+				"ColorOptions", NULL, NULL, 	/*The ColorOptions element*/
 				MXML_DESCEND); 			/*Descending*/
 
 	/*the search might return null*/
@@ -673,7 +673,7 @@ menu_items_t printmenuMarginOptions(mxml_node_t *tree)
 	printf("MarginOptions\n-----------\n\n");
 
 	MarginOptions = mxmlFindElement(tree, tree, 		/*Search from the top*/
-				"MarginOptions", NULL, NULL, 	/*The Destination element*/
+				"MarginOptions", NULL, NULL, 	/*The MarginOptions element*/
 				MXML_DESCEND); 			/*Descending*/
 
 	/*the search might return null*/
@@ -714,7 +714,7 @@ menu_items_t printmenuSecurityOptions(mxml_node_t *tree)
 	printf("SecurityOptions\n-----------\n\n");
 
 	SecurityOptions = mxmlFindElement(tree, tree, 		/*Search from the top*/
-				"SecurityOptions", NULL, NULL, 	/*The Destination element*/
+				"SecurityOptions", NULL, NULL, 	/*The SecurityOptions element*/
 				MXML_DESCEND); 			/*Descending*/
 
 	/*the search might return null*/
@@ -744,8 +744,12 @@ menu_items_t printmenuSecurityOptions(mxml_node_t *tree)
 		/*Print sub node Expiration*/
 		printf("\nExpiration: \n");
 		/*TODO finish this function*/
+		SecExpirationOptions = mxmlFindElement(SecurityOptions,SecurityOptions, 	/*Search inside SecurityOptions node*/
+					"SecurityOptions", NULL, NULL, 				/*The SecurityOptions element*/
+					MXML_DESCEND); 						/*Descending*/
 
-	
+
+
 	} /*end of the SecurityOptions procesing*/
 	else 
 	{
@@ -780,7 +784,7 @@ menu_items_t printmenuLinkOptions(mxml_node_t *tree)
 	printf("LinkOptions\n-----------\n\n");
 
 	LinkOptions = mxmlFindElement(tree, tree, 		*Search from the top*
-				"LinkOptions", NULL, NULL, 	*The Destination element*
+				"LinkOptions", NULL, NULL, 	*The LinkOptions element*
 				MXML_DESCEND); 			*Descending*
 
 	*the search might return null*
