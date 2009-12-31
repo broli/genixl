@@ -398,7 +398,7 @@ menu_items_t printmenuLinkOptions(mxml_node_t *tree)
 	printf("LinkOptions\n-----------\n\n");
 
 	LinkOptions = mxmlFindElement(tree, tree, 		/*Search from the top*/
-				"LinkOptions", NULL, NULL, 	/*The Destination element*/
+				"LinkOptions", NULL, NULL, 	/*The LinkOptions element*/
 				MXML_DESCEND); 			/*Descending*/
 
 	/*the search might return null*/
@@ -636,7 +636,7 @@ menu_items_t printmenuColorOptions(mxml_node_t *tree)
 	printf("ColorOptions\n-----------\n\n");
 
 	ColorOptions = mxmlFindElement(tree, tree, 		/*Search from the top*/
-				"ColorOptions", NULL, NULL, 	/*The Destination element*/
+				"ColorOptions", NULL, NULL, 	/*The ColorOptions element*/
 				MXML_DESCEND); 			/*Descending*/
 
 	/*the search might return null*/
@@ -673,7 +673,7 @@ menu_items_t printmenuMarginOptions(mxml_node_t *tree)
 	printf("MarginOptions\n-----------\n\n");
 
 	MarginOptions = mxmlFindElement(tree, tree, 		/*Search from the top*/
-				"MarginOptions", NULL, NULL, 	/*The Destination element*/
+				"MarginOptions", NULL, NULL, 	/*The MarginOptions element*/
 				MXML_DESCEND); 			/*Descending*/
 
 	/*the search might return null*/
@@ -706,12 +706,15 @@ menu_items_t printmenuMarginOptions(mxml_node_t *tree)
 menu_items_t printmenuSecurityOptions(mxml_node_t *tree)
 {
 	mxml_node_t *SecurityOptions=NULL;
+	mxml_node_t *SecExpirationOptions=NULL;
+	mxml_node_t *SecPasswordOptions=NULL;
+	mxml_node_t *SecRegistrationCodeOptions=NULL;
 
 	system("clear");
 	printf("SecurityOptions\n-----------\n\n");
 
 	SecurityOptions = mxmlFindElement(tree, tree, 		/*Search from the top*/
-				"SecurityOptions", NULL, NULL, 	/*The Destination element*/
+				"SecurityOptions", NULL, NULL, 	/*The SecurityOptions element*/
 				MXML_DESCEND); 			/*Descending*/
 
 	/*the search might return null*/
@@ -720,12 +723,53 @@ menu_items_t printmenuSecurityOptions(mxml_node_t *tree)
 
 		/*Print LeftRightMargins*/
 		/*printf("\n"); *make it pretty*/
-		printf("1) Convert:\t%s\n",getElemValue(SecurityOptions,"Convert") );
+		printf("1) Convert:\t\t%s\n",getElemValue(SecurityOptions,"Convert") );
 
-	
+		/*Print CopyBeam*/
+		printf("\n"); /*make it pretty*/
+		printf("2) CopyBeam:\t\t%s\n",getElemValue(SecurityOptions,"CopyBeam") );
+
+		/*Print CopyAndPaste*/
+		printf("\n"); /*make it pretty*/
+		printf("3) CopyAndPaste:\t%s\n",getElemValue(SecurityOptions,"CopyAndPaste") );
+
+		/*Print Modify*/
+		printf("\n"); /*make it pretty*/
+		printf("4) Modify:\t\t%s\n",getElemValue(SecurityOptions,"Modify") );
+
+		/*Print Print*/
+		printf("\n"); /*make it pretty*/
+		printf("5) Print:\t\t%s\n",getElemValue(SecurityOptions,"Print") );
+		
+		/*Print sub node Expiration*/
+		printf("\nExpiration: \n");
+		/*TODO finish this function*/
+		SecExpirationOptions = mxmlFindElement(SecurityOptions,SecurityOptions, 	/*Search inside SecurityOptions node*/
+					"SecurityOptions", NULL, NULL, 				/*The SecurityOptions element*/
+					MXML_DESCEND); 						/*Descending*/
+
+
+
 	} /*end of the SecurityOptions procesing*/
 	else 
 	{
+		/*No SecurityOptions node, print empty*/
+		printf("01) Convert:\t\t<n/a>\n"
+			"02) CopyBeam:\t\t<n/a>\n"
+			"03) CopyAndPaste:\t<n/a>\n"
+			"04) Modify:\t\t<n/a>\n"
+			"05) Print:\t\t<n/a>\n"
+			"\nExpiration: \n"
+			"\t 06) Expires:\t\t<n/a>\n"
+			"\t 07) Date:\t\t\t<n/a>\n"
+			"\nPassword:\n"
+			"\t 08) Require:\t\t<n/a>\n"
+			"\t 09) Password:\t\t<n/a>\n"
+			"\nRegistrationCode:\n"
+			"\t 10) Require:\t\t<n/a>\n"
+			"\t 11) DocumentID:\t\t<n/a>\n"
+			"\n\n");
+
 	}
 		
 
@@ -741,7 +785,7 @@ menu_items_t printmenuLinkOptions(mxml_node_t *tree)
 	printf("LinkOptions\n-----------\n\n");
 
 	LinkOptions = mxmlFindElement(tree, tree, 		*Search from the top*
-				"LinkOptions", NULL, NULL, 	*The Destination element*
+				"LinkOptions", NULL, NULL, 	*The LinkOptions element*
 				MXML_DESCEND); 			*Descending*
 
 	*the search might return null*
