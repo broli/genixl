@@ -726,13 +726,8 @@ menu_items_t printmenuSecurityOptions(mxml_node_t *tree)
 	} /*end of the SecurityOptions procesing*/
 	else 
 	{
-		/*No SecurityOptions node, print empty*
-		printf("1) .
-			.
-			.
-			.
-			.\n\n");*/
 	}
+		
 
 	return MENU_SECURITY;
 }
