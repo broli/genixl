@@ -743,11 +743,19 @@ menu_items_t printmenuSecurityOptions(mxml_node_t *tree)
 		
 		/*Print sub node Expiration*/
 		printf("\nExpiration: \n");
-		/*TODO finish this function*/
-		SecExpirationOptions = mxmlFindElement(SecurityOptions,SecurityOptions, 	/*Search inside SecurityOptions node*/
-					"SecurityOptions", NULL, NULL, 				/*The SecurityOptions element*/
-					MXML_DESCEND); 						/*Descending*/
 
+		SecExpirationOptions = mxmlFindElement(SecurityOptions,SecurityOptions, 	/*Search inside SecurityOptions node*/
+					"Expiration", NULL, NULL, 				/*The Expiration element*/
+					MXML_DESCEND); 						/*Descending*/
+		
+		if (SecExpirationOptions != NULL)
+		{
+			/*print the subnodes*/
+		}
+		else
+		{
+			/*print empty*/
+		}
 
 
 	} /*end of the SecurityOptions procesing*/
