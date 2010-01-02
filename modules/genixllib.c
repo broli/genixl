@@ -751,10 +751,20 @@ menu_items_t printmenuSecurityOptions(mxml_node_t *tree)
 		if (SecExpirationOptions != NULL)
 		{
 			/*print the subnodes*/
+			/*Print Expires*/
+			printf("4) Expires:\t\t%s\n",getElemValue(SecExpirationOptions,"Expires") );
+
+			/*Print Date*/
+			printf("\n"); /*make it pretty*/
+			printf("4) Date:\t\t%s\n",getElemValue(SecExpirationOptions,"Date") );
+
 		}
 		else
 		{
 			/*print empty*/
+			printf("\t 06) Expires:\t\t<n/a>\n"
+				"\t 07) Date:\t\t<n/a>\n");
+
 		}
 
 
@@ -769,13 +779,13 @@ menu_items_t printmenuSecurityOptions(mxml_node_t *tree)
 			"05) Print:\t\t<n/a>\n"
 			"\nExpiration: \n"
 			"\t 06) Expires:\t\t<n/a>\n"
-			"\t 07) Date:\t\t\t<n/a>\n"
+			"\t 07) Date:\t\t<n/a>\n"
 			"\nPassword:\n"
 			"\t 08) Require:\t\t<n/a>\n"
 			"\t 09) Password:\t\t<n/a>\n"
 			"\nRegistrationCode:\n"
 			"\t 10) Require:\t\t<n/a>\n"
-			"\t 11) DocumentID:\t\t<n/a>\n"
+			"\t 11) DocumentID:\t<n/a>\n"
 			"\n\n");
 
 	}
