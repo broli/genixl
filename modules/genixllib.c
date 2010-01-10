@@ -724,6 +724,30 @@ menu_items_t printmenuSecurityOptions(mxml_node_t *tree)
 		/*Print sub node Password*/
 		printf("\nPassword:\n");
 
+		SecPasswordOptions = mxmlFindElement(SecurityOptions,SecurityOptions, 	/*Search inside SecurityOptions node*/
+					"Password", NULL, NULL, 				/*The Expiration element*/
+					MXML_DESCEND); 						/*Descending*/
+		
+		if (SecPasswordOptions != NULL)
+		{
+			/*print the subnodes*/
+			/*Print Require*/
+			printf("\t 08) Require:\t\t%s\n",getElemValue(SecPasswordOptions,"Require") );
+
+			/*Print Password*/
+			printf("\t 09) Password:\t\t%s\n",getElemData(SecPasswordOptions,"Password") );
+
+		}
+		else
+		{
+			/*print empty*/
+			printf("\t 08) Require:\t\t<n/a>\n"
+				"\t 09) Password:\t\t<n/a>\n");
+
+		}
+
+
+
 	} /*end of the SecurityOptions procesing*/
 	else 
 	{
