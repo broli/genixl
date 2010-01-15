@@ -698,7 +698,7 @@ menu_items_t printmenuSecurityOptions(mxml_node_t *tree)
 		printf("05) Print:\t\t%s\n",getElemValue(SecurityOptions,"Print") );
 		
 		/*Print sub node Expiration*/
-		printf("\nExpiration: \n");
+		printf("Expiration: \n");
 
 		SecExpirationOptions = mxmlFindElement(SecurityOptions,SecurityOptions, 	/*Search inside SecurityOptions node*/
 					"Expiration", NULL, NULL, 				/*The Expiration element*/
@@ -722,7 +722,7 @@ menu_items_t printmenuSecurityOptions(mxml_node_t *tree)
 
 		}
 		/*Print sub node Password*/
-		printf("\nPassword:\n");
+		printf("Password:\n");
 
 		SecPasswordOptions = mxmlFindElement(SecurityOptions,SecurityOptions, 	/*Search inside SecurityOptions node*/
 					"Password", NULL, NULL, 				/*The Expiration element*/
@@ -746,6 +746,30 @@ menu_items_t printmenuSecurityOptions(mxml_node_t *tree)
 
 		}
 
+		/*Print sub node Registration code*/
+		printf("Registration Code:\n");
+
+		SecRegistrationCodeOptions = mxmlFindElement(SecurityOptions,SecurityOptions, 	/*Search inside SecurityOptions node*/
+					"RegistrationCode", NULL, NULL, 				/*The Expiration element*/
+					MXML_DESCEND); 						/*Descending*/
+		
+		if (SecRegistrationCodeOptions != NULL)
+		{
+			/*print the subnodes*/
+			/*Print Require*/
+			printf("\t 10) Require:\t\t%s\n",getElemValue(SecRegistrationCodeOptions,"Require") );
+
+			/*Print DocumentID*/
+			printf("\t 11) DocumentID:\t%s\n",getElemData(SecRegistrationCodeOptions,"DocumentID") );
+
+		}
+		else
+		{
+			/*print empty*/
+			printf("\t 10) Require:\t\t<n/a>\n"
+				"\t 11) DocumentID:\t\t<n/a>\n");
+
+		}
 
 
 	} /*end of the SecurityOptions procesing*/
@@ -757,13 +781,13 @@ menu_items_t printmenuSecurityOptions(mxml_node_t *tree)
 			"03) CopyAndPaste:\t<n/a>\n"
 			"04) Modify:\t\t<n/a>\n"
 			"05) Print:\t\t<n/a>\n"
-			"\nExpiration: \n"
+			"Expiration: \n"
 			"\t 06) Expires:\t\t<n/a>\n"
 			"\t 07) Date:\t\t<n/a>\n"
-			"\nPassword:\n"
+			"Password:\n"
 			"\t 08) Require:\t\t<n/a>\n"
 			"\t 09) Password:\t\t<n/a>\n"
-			"\nRegistrationCode:\n"
+			"Registration Code:\n"
 			"\t 10) Require:\t\t<n/a>\n"
 			"\t 11) DocumentID:\t<n/a>\n"
 			"\n\n");
