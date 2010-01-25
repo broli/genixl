@@ -1,0 +1,223 @@
+<?xml version="1.0"?>
+<iSiloXDocumentList>
+  <iSiloXDocument>
+
+    <Source>
+      <Sources>
+        <Path>http://www.iSilo.com</Path>
+        <Path>http://www.iSiloX.com</Path>
+      </Sources>
+      <UserName>Joe</UserName>
+      <Password>Joe's Password</Password>  
+      <CharSet>iso-8859-1</CharSet>
+    </Source>
+
+    <Destination>
+      <Title></Title>
+      <HotSync>
+        <Path>John Doe</Path>
+        <Path>Jane Doe:</Path>
+      </HotSync>
+      <ActiveSync>
+        <Path>PocketPC</Path>
+        <Path>PocketPC:</Path>
+      </ActiveSync>
+      <Files>
+        <Path>c:\My Documents\My Document.pdb</Path>
+        <Path>c:\Backup\My Document.pdb</Path>
+      </Files>
+    </Destination>
+
+    <LinkOptions>
+      <MaximumDepth             value="1"/>
+      <FollowOffsite            value="yes"/>
+      <MaximumOffsiteDepth      value="1"/>
+      <SubDirOnly               value="no"/>
+      <UnresolvedDetail         value="include"/>
+      <Exclude>
+        <Pattern>RE::table[1-9].jpg</Pattern>
+        <Pattern>WC::figures*plant?blue</Pattern>
+      </Exclude>
+      <Include>
+        <Pattern>RE:C:Table8</Pattern>
+      </Include>
+      <ExternalDocuments>
+        <Specification>
+          <Path>DocumentB</Path>
+          <Prefix>DocumentB</Prefix>
+          <KeepPrefix             value="no"/>
+          <MapFile>c:\Docs\DocumentB\DocumentB.map</MapFile>
+          <Lookup                 value="ByID"/>
+        </Specification>
+      </ExternalDocuments>
+    </LinkOptions>
+
+    <ImageOptions>
+      <AltText                  value="exclude"/>
+      <Images                   value="include"/>
+      <ResizeLargeImages        value="yes"/>
+      <MaximumWidth             value="144"/>
+      <MaximumHeight            value="144"/>
+      <ImproveContrast          value="yes"/>
+      <Dither                   value="yes"/>
+      <Compress                 value="yes"/>
+      <LossyLevel               value="none"/>
+      <LossyQuality             value="75"/>
+      <BitDepth1                value="exclude"/>
+      <BitDepth2                value="exclude"/>
+      <BitDepth4                value="exclude"/>
+      <BitDepth8                value="exclude"/>
+      <BitDepth16               value="include"/>
+    </ImageOptions>
+
+    <TableOptions>
+      <IgnoreTables             value="no"/>
+      <AddSeparators            value="no"/>
+      <UseMinimumDepth          value="no"/>
+      <MinimumDepth             value="1"/>
+      <UseMaximumBottomReach    value="no"/>
+      <MaximumBottomReach       value="1"/>
+      <UnfoldFullPageTables     value="no"/>
+      <IgnorePixelWidths        value="no"/>
+    </TableOptions>
+
+    <ColorOptions>
+      <BackgroundColors         value="keep"/>
+      <TextColors               value="keep"/>
+    </ColorOptions>
+
+    <MarginOptions>
+      <LeftRightMargins         value="keep"/>
+      <LeftRightPadding         value="keep"/>
+    </MarginOptions>
+
+    <SecurityOptions>
+      <Convert                  value="allow"/>
+      <CopyBeam                 value="allow"/>
+      <CopyAndPaste             value="allow"/>
+      <Modify                   value="disallow"/>
+      <Print                    value="disallow"/>
+      <Expiration>
+        <Expires                value="no"/>
+        <Date                   value="20030529"/>
+      </Expiration>
+      <Password>
+        <Require                value="no"/>
+        <Password>MyPassword</Password>
+      </Password>
+      <RegistrationCode>
+        <Require                value="no"/>
+        <DocumentID>UniqueID55PC</DocumentID>
+      </RegistrationCode>
+    </SecurityOptions>
+
+    <TextOptions>
+      <PreUseMonospaceFont      value="yes"/>
+      <PreSingleLineBreaks      value="KeepAll"/>
+      <ProcessLineBreaks        value="yes"/>
+      <ConvertSingleLineBreaks  value="no"/>
+      <Preformatted             value="no"/>
+      <UseMonospaceFont         value="no"/>
+      <MonospaceFontSize        value="10"/>
+      <TabStopWidth             value="8"/>
+    </TextOptions>
+
+    <DocumentOptions>
+      <PageBounds               value="hard"/>
+      <UseDefaultCategory       value="no"/>
+      <DefaultCategory>Unfiled</DefaultCategory>
+      <HomePageNumber           value="1"/>
+      <OpenHomePageOnDateChange value="yes"/>
+      <CharSet>Windows-1252</CharSet>
+    </DocumentOptions>
+
+    <Bookmarks>
+      <Document>
+        <UseFile                value="no"/>
+        <Path>c:\docs\bookmarks.htm</Path>
+        <UseNamedAnchors        value="no"/>
+        <NamedAnchorType        value="WordWebPage"/>
+        <UseIncludeFilter       value="no"/>
+        <IncludePrefix>bm</IncludePrefix>
+        <UseExcludeFilter       value="no"/>
+        <ExcludePrefix>bm_</ExcludePrefix>
+      </Document>
+    </Bookmarks>
+
+    <LastConversion>
+      <Date>2002/08/01 08:12:02</Date>
+      <Size value="123456789"/>
+      <Status>Conversion successful</Status>
+    </LastConversion>
+
+    <Messages>
+      <Title>My Document's Full Title Is Written Here</Title>
+      <Version>v. 2.1</Version>
+      <Copyright>(C) 2003 ACME, Inc.</Copyright>
+      <Notes>This document is protected by copyright law.</Notes>
+      <AuthorName>Yar Givin</AuthorName>
+      <AuthorContact>yar@givin.com</AuthorContact>
+      <AuthorNotes>Email me with your comments.</AuthorNotes>
+      <PublisherName>Tasteful Publishers, Inc.</PublisherName>
+      <PublisherContact>contact@tastefulpublishers.com</PublisherContact>
+      <PublisherNotes>Publishers of anything.</PublisherNotes>
+      <RegCodePreMsg>This document requires that you enter a registration code.  If you do not have one, please visit http://www.acme.com for more information.</RegCodePreMsg>
+      <RegCodeFailedMsg>To purchase this document, please visit:\nhttp://www.acme.com</RegCodeFailedMsg>
+      <RegCodeCancelMsg>To purchase this document, please visit:\nhttp://www.acme.com</RegCodeCancelMsg>
+      <PasswordPreMsg>This document requires a password.</PasswordPreMsg>
+      <PasswordFailedMsg>Note that it is a felony to attempt to access this document without authorization.</PasswordFailedMsg>
+      <PasswordCancelMsg>Consult your administrator for more information.</PasswordCancelMsg>
+      <ExpiredMsg>This document has expired, please visit http://www.acme.org for an updated version.</ExpiredMsg>
+    </Messages>
+
+    <CookieOptions>
+      <SendCookies              value="no"/>
+      <ReceiveCookies           value="no"/>
+      <Cookies>
+        <Cookie>
+          <ReadOnly             value="no"/>
+          <DoNotSend            value="no"/>
+          <Discard              value="no"/>
+          <Secure               value="no"/>
+          <Name>TOKEN</Name>
+          <Value>48A897ZUIO98</Value>
+          <Expires>2015/12/25 08:52:12</Expires>
+          <Version>1</Version>
+          <Path>/</Path>
+          <Port>80,8000</Port>
+          <Domain>.foo.com</Domain>
+          <Comments>none</Comments>
+          <CommentURL>http://www.foo.com/cookies.htm</CommentURL>
+        </Cookie>
+      </Cookies>
+    </CookieOptions>
+
+    <Scheduling>
+      <Disable                  value="no"/>
+      <LastConversion>2003/03/11 16:23:02</LastConversion>
+      <NextConversion>2003/03/12 15:17:00</NextConversion>
+      <Schedules>
+        <Schedule>
+          <Disable              value="no"/>
+          <LastConversion>2003/03/11 16:23:02</LastConversion>
+          <NextConversion>2003/03/12 15:17:00</NextConversion>
+          <Frequency            value="hourly"/>
+          <Time                 value="17"/>
+          <Weekday              value="Mon"/>
+          <Day                  value="31"/>
+          <Type                 value="every"/>
+          <Every                value="1"/>
+        </Schedule>
+      </Schedules>
+    </Scheduling>
+
+    <Targets>
+      <Export                   value="all"/>
+      <ByFile>c:\Docs\export.htm</ByFile>
+      <Lookup                   value="ByName"/>
+      <GenerateMapFile          value="yes"/>
+      <MapFile>c:\Docs\DocumentX.map</MapFile>
+    </Targets>
+
+  </iSiloXDocument>
+</iSiloXDocumentList>
