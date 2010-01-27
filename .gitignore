@@ -3,7 +3,7 @@ salida
 tags
 *.bak
 www/
-autoscan.log
+autoscan*.log
 configure.scan
 *.o
 Makefile
