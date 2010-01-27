@@ -14,7 +14,14 @@ AC_PROG_CC
 # Checks for libraries.
 
 # Checks for header files.
-AC_CHECK_HEADERS([locale.h stdlib.h string.h stdio.h iconv.h mxml.h])
+AC_CHECK_HEADERS([locale.h stdlib.h string.h stdio.h iconv.h],
+		 [],
+		 [AC_MSG_ERROR([Some stdc header is missing. please check your OS documentation on how to install them])])
+
+#check for mxml. do nothing if found. die with an error if not found
+AC_CHECK_HEADER([mxml.h],
+		[],
+		[AC_MSG_ERROR([mini-xml is missing; please install the headers first])])
 
 # Checks for typedefs, structures, and compiler characteristics.
 
