@@ -3,3 +3,5 @@ salida
 tags
 *.bak
 www/
+autoscan.log
+configure.scan
