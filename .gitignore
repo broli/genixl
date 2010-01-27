@@ -13,7 +13,6 @@ autom4te.cache/
 config.log
 config.status
 depcomp
-install-sh
 missing
 src/.deps/
 src/Makefile
