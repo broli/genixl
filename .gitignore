@@ -6,3 +6,17 @@ www/
 autoscan.log
 configure.scan
 *.o
+Makefile
+Makefile.in
+aclocal.m4
+autom4te.cache/
+config.log
+config.status
+depcomp
+install-sh
+missing
+src/.deps/
+src/Makefile
+src/Makefile.in
+src/genixl
+
