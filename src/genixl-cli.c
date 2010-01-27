@@ -41,12 +41,45 @@ int main(int argc, char *argv[])
 		/*not critical, but lets just warn the user*/
 		perror("Warning: Cant set locale, check your env\n");
 	}
-	if ( argc != 2 )
+	if ( argc < 2 )
 	{
+		/*the app was run with parameters*/
 		printf("The apps needs 1 parameter\n");
 		return EXIT_FAILURE;
 	}
 
+	fp = fopen(argv[1], "r");
+	if ( fp == NULL )
+	{
+		printf("cannot open file \"%s\"\n",argv[1]);
+		return EXIT_FAILURE;
+	}
+
+	tree = mxmlLoadFile(NULL, fp, MXML_OPAQUE_CALLBACK);
+
+	/*printmenu(MENU_MAIN,NULL);*/
+	/*printmenu(MENU_SOURCE,tree);*/
+	/*printmenu(MENU_DESTINATION,tree);*/
+	/*printmenu(MENU_LINK,tree);*/
+	/*printmenu(MENU_IMAGE,tree);*/
+	/*printmenu(MENU_TABLE,tree);*/
+	/*printmenu(MENU_COLOR,tree);*/
+	/*printmenu(MENU_MARGIN,tree);*/
+	printmenu(MENU_MAIN,NULL);
+	printmenu(MENU_SOURCE,tree);
+	printmenu(MENU_DESTINATION,tree);
+	printmenu(MENU_LINK,tree);
+	printmenu(MENU_IMAGE,tree);
+	printmenu(MENU_TABLE,tree);
+	printmenu(MENU_COLOR,tree);
+	printmenu(MENU_MARGIN,tree);
+	printmenu(MENU_SECURITY,tree);
+
+
+/*git config push.default current*/
+
+	mxmlDelete(tree);
+	fclose(fp);
 	return EXIT_SUCCESS;
 }
 
