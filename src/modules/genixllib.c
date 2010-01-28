@@ -105,8 +105,8 @@ menu_items_t printmenu(menu_items_t menu,mxml_node_t *tree)
 	}
 	else if ( menu == MENU_TEXT )
 	{
-		/*TODO make text menu*/
-		return MENU_TEXT;
+		rtrnMenu = printmenuTextOptions(tree);
+		return rtrnMenu;
 	}
 	else if ( menu == MENU_DOCUMENT )
 	{
@@ -796,6 +796,31 @@ menu_items_t printmenuSecurityOptions(mxml_node_t *tree)
 		
 
 	return MENU_SECURITY;
+}
+
+menu_items_t printmenuTextOptions(mxml_node_t *tree)
+{
+	mxml_node_t *TextOptions=NULL;
+
+	system("clear");
+	printf("LinkOptions\n-----------\n\n");
+
+	TextOptions = mxmlFindElement(tree, tree, 		/*Search from the top*/
+				"TextOptions", NULL, NULL, 	/*The TextOptions element*/
+				MXML_DESCEND); 			/*Descending*/
+
+	/*the search might return null*/
+	if ( TextOptions != NULL )
+	{
+
+	}/*end of the TextOptions procesing*/
+	else 
+	{
+		/*No TextOptions node, print empty*/
+	}
+
+
+	return MENU_TEXT;
 }
 
 /*
