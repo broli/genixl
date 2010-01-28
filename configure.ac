@@ -29,12 +29,13 @@ AC_CHECK_HEADER([mxml.h],
 AC_CHECK_FUNCS([setlocale])
 
 #Set cflags for MXML
-CFLAGS="$CFLAGS `pkg-config --cflags mxml`"
-AC_SUBST(CFLAGS)
+AM_CFLAGS="`pkg-config --cflags mxml`"
+AC_SUBST(AM_CFLAGS)
 
 #set Libs for MXML
-LIBS="$LIBS `pkg-config --libs mxml`"
-AC_SUBST(LIBS)
+##AM_LIBS="`pkg-config --libs mxml`"
+AM_LDFLAGS="`pkg-config --libs mxml`"
+AC_SUBST(AM_LDFLAGS)
 
 AC_CONFIG_FILES([Makefile src/Makefile])
 
