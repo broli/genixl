@@ -28,6 +28,14 @@ AC_CHECK_HEADER([mxml.h],
 # Checks for library functions.
 AC_CHECK_FUNCS([setlocale])
 
+#Set cflags for MXML
+CFLAGS="$CFLAGS `pkg-config --cflags mxml`"
+AC_SUBST(CFLAGS)
+
+#set Libs for MXML
+LIBS="$LIBS `pkg-config --libs mxml`"
+AC_SUBST(LIBS)
+
 AC_CONFIG_FILES([Makefile src/Makefile])
 
 AC_OUTPUT
