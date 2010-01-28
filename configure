@@ -641,6 +641,8 @@ ac_subst_vars='am__EXEEXT_FALSE
 am__EXEEXT_TRUE
 LTLIBOBJS
 LIBOBJS
+AM_LDFLAGS
+AM_CFLAGS
 EGREP
 GREP
 CPP
@@ -4505,11 +4507,12 @@ done
 
 
 #Set cflags for MXML
-CFLAGS="$CFLAGS `pkg-config --cflags mxml`"
+AM_CFLAGS="`pkg-config --cflags mxml`"
 
 
 #set Libs for MXML
-LIBS="$LIBS `pkg-config --libs mxml`"
+##AM_LIBS="`pkg-config --libs mxml`"
+AM_LDFLAGS="`pkg-config --libs mxml`"
 
 
 ac_config_files="$ac_config_files Makefile src/Makefile"
