@@ -74,6 +74,7 @@ int main(int argc, char *argv[])
 	printmenu(MENU_COLOR,tree);
 	printmenu(MENU_MARGIN,tree);
 	printmenu(MENU_SECURITY,tree);
+	printmenu(MENU_TEXT,tree);
 
 
 /*git config push.default current*/
